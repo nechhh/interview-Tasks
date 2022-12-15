@@ -1,0 +1,109 @@
+1.tell me about your experience in writing test plans, test cases, test scenarios what's the execution process?
+
+•Our test plan and test strategy  wrote  by test manager.I write test cases based on that structure.
+•We make sure everybody follows the structure of company.
+
+
+========================================================================================================================
+2.what is your debugging approach?
+
+ •I Put break point and I go step by step with focus on details.
+
+========================================================================================================================
+4.Do you use any pipeline ?
+
+ •we use pipeline on jenkins our devops team perform it.
+========================================================================================================================
+5.performance testing and how do you do it ?
+
+•you check the  app stability against N number of request.
+========================================================================================================================
+6.what is traceability matrix?
+
+ •With RTM we can track the status of requirement.If we miss any test cases or defect will map us to which requirement is failed.
+
+
+========================================================================================================================
+7.what is selenium ide ?
+
+  •Selenium IDE is an open source test automation tool that can record and playback your actions on the web.
+  •manual testers who have to repeat their test scenarios are benefiting from the tool
+========================================================================================================================
+8.automation challenges?
+
+ -Communication and collaboration.
+ -Finding the right Testing Framework and tool.
+========================================================================================================================
+9.how do you decide to do automation ?
+
+   -The task is going to be repeated.
+   -It's going to save time.
+   -The test is subject to human error.
+   -test that are impossible to perform manually.
+
+
+========================================================================================================================
+10.what is your role in demo meeting ?
+
+ -I provide a demo of what i did.
+
+========================================================================================================================
+11.tell me what makes you good QA ?
+
+ -If I can think from users perspective,if I have strong  communication with my colleagues.when I leave my company and who
+ come after me can easily understand my codes and test cases.Then I will say I am good QA.
+
+========================================================================================================================
+12.Jira and explain me what you do in the Jira?
+   -In jira I manage my user stories status and I track my bug status.
+========================================================================================================================
+13.do me a ui test how would you set up your environment ?
+
+  System.setProperties("webdriver.chrome.driver","drivers/chromedriver");
+  Webdriver driver=new Chromedriver();
+  driver.get(url);
+
+
+========================================================================================================================
+14.Risk analyst testing give me a scenario ?
+========================================================================================================================
+15. Simple Password
+Have the function SimplePassword (str) take the str parameter being passed and determine
+if it passes as a valid password that follows the list of constraints:
+1. It must have a capital letter.
+2. It must contain at least one number.
+3. It must contain a punctuation mark or mathematical symbol.
+4. It cannot have the word “password” in the string.
+
+5. It must be longer than 7 characters and shorter than 31 characters, if all the above
+constraints are met within the string, the your program should return the string true,
+otherwise your program should return the string false.
+For example: If str is “apple!M7" then your program
+should return “true*,
+Input: “passWord123!!!!”
+Output: false
+Input: “turkey90AAAA=”
+Output: true
+========================================================================================================================
+16. Distinct List
+Have the function DistinctList(arr) take the array of numbers stored in arr and
+determine the total number of duplicate entries. For example If the input ls (1, 2, 2, 2, 3]
+then your program should output 2 because there are two duplicates of one of the
+elements.
+Examples
+Input: [0,-2,-2,5,5,5]
+Output: 3
+Input: [100,2,101,4]
+Output: 0
+
+
+========================================================================================================================
+How would you design an E2E framework following the POM to automate the
+web app? Please take into consideration a multiple-layers validation as well as
+the fact that your framework will run over multiple environments. Please do not
+hesitate to provide as many details as you consider necessary.
+
+ -1.Build user functions
+ -2.build Conditions
+ -3.Build Test Cases
+

@@ -1,0 +1,133 @@
+1.How do you launch browser in Selenium?
+
+  System.properties("webdriver.chrome.driver","drivers/chromedriver")
+  Webdriver driver=new ChromeDriver;
+  driver.get(url);
+
+
+========================================================================================================================
+2.What type of waits do you use?Explain
+
+  •We have 3 types of waits;
+    •Implicit;Is set a certaion amout of time before it throw a No such element fount exception.
+    •Explicit;It set a set time for a condition before it trow an element is not visible exception.
+    •Fluent;It  marks max amount of time for wait for a certain condition(web element )become visible.
+     It also defines how frequently WebDriver will check if the condition appears before throw ElementNotVisibleException.
+========================================================================================================================
+3.What is class?
+
+ •a class is a basic building block that create and describe variable and behaviors.
+
+
+========================================================================================================================
+4.What is Object Oriented Program In java?
+
+ •Java oops concept let us create working methods and varibles and re-use them.
+
+   •Abstraction;Is providing only the necessary details and hiding all implementations details.
+      •Create a class with abstract keyword.
+      •and declare at least one methods with abstract keyword
+      •create child class extend abstract class and imlement the method body.
+   •PolyMorphism : It is ability a method act differently
+      •OverLoading;(static, Compile time)
+         •In same class change the methods parameters
+      •OverRidding;(dynamic ,run time )
+          •In another class extend a class and call same method but implement a new body.
+   Encapsulation;it is a mechanism provides us security.
+    •Declare variables private.then access them via public methods.
+    •Create setter and getter methods to read and write these fields.
+     •don't allow users access your class which you keep sensitive data.but let user use them.(ATM)
+  •Inheritance; is a parent child class relationship. we can achieve by extend keyword.a derived class inherits
+   super class and use all methods and variables in the super class.
+     •Single Inheritance(single base class and single derived class.)
+     •Hierarchical Inheritance(- when a class has more than one child classes)
+     •Multilevel Inheritance(ClassA->ClassB->ClassC)
+     •Multiple Inheritance;multiple classes and single derived class (Possible through interface only)
+     •Hybrid Inheritance
+
+
+
+========================================================================================================================
+5.Where do you use OOPs in your framework.
+
+ •Interface; WebDriver driver =new Chromedriver();
+             JavascriptExecutor js=(JavascriptExecutor) driver;
+ •Polymorphism;
+    •OverLoading;when we select DD value(by name ,by index,by value)
+               switchToFrame(Web element ,index)
+    •Method overriding; WebDriver driver =new Chromedriver();  ,JavascriptExecutor js=(JavascriptExecutor) driver;
+
+ •Encapsulation;
+     public class ExcelUtility {
+     private static Workbook wbook;
+     private static Sheet sheet;
+     public static Workbook getWorkbook(String filePath).
+
+
+
+========================================================================================================================
+6.Difference between Array and ArrayList.
+========================================================================================================================
+7.Tell me about your contribution as an automation engineer
+========================================================================================================================
+8.What do you do when you find a defect ?
+
+   •Re-test 3-5 times.
+   •I said my colleague to test for make sure it is not caused my machine.
+   •Then i take ss or screen's record.
+   •then I log a defect on JIRA assign the developer.
+========================================================================================================================
+9..What is a Test Scenario ?
+
+ ••In user story possible area to be tested.Answer for "What to test"
+
+========================================================================================================================
+10.What is Verification and Validation ?
+
+ •Verification;It happens by devs. and testers to evaluating software during development phase.
+ •Validation; In the end of the development process to check whether it meets the customers requirements.
+
+========================================================================================================================
+11 What is the Software Testing Life Cycle (STLC)?
+
+   *STLC defines the phases in testing of software or application.
+
+    •1. Requirement / Design Analysis
+    •2. Test Planning
+    •3. Test Case Development (Designing)
+    •4. Test Environment Setup
+    •5. Test Execution
+    6. Test Closure Activity (Reporting)
+
+========================================================================================================================
+12 Describe Your Role ?
+
+     •I am responsible for for develop and maintain our "test automation framework"base on the POM and adding new test cases.
+     •I am responsible for performing UI and BackEnd tests.
+     •I am tracking bag and ticket status on Jira.
+     •As a cross functional team member, I help the functional testers, teach them the basics automation framework.
+     •I run the entire regression suit before each application release.I analyze the test result.I provide a pass-fail report.
+
+
+========================================================================================================================
+13. Why should we hire you ?
+
+ •The reason I am looking for a new position.In my current company my scope is not what i want.I want to take more
+  responsibilities,I want to take more challenges to improve my skills.I believe I couldn't show there really who i am.
+  So when we came to why you hire me,I have reasons to be successful and this is what all companies want.Also most
+  important part, the company and team rules are my red line when doing those things.
+
+========================================================================================================================
+14.What makes a person a good QA ?
+
+     •On my opinion, one of the best trait of a  QA; If one day left job and Someone after came up. And Understand clearly
+      His/Her did.and Also if can his/her best based on the company and team rules.
+      •Asking right question.
+      •If attentive person.
+      •if has excellent communication skill,good time management, self confidence those are what makes someone good QA.
+
+
+========================================================================================================================
+15.Create an array and find the largest and smallest numbers.
+
+========================================================================================================================

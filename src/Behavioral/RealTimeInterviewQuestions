@@ -1,0 +1,43 @@
+1.Why are you into testing?
+
+ •Passion;I am passion about it.I always want to deliver the best of best.
+ •Perfection;I am always want to do anything perfectly.
+ •Quality; I am believe in quality.
+========================================================================================================================
+2.Did you ever give conditional sign off?
+
+  •Yes,I had given conditional sign off in some cases when I was not comfortable with the level of testing I performed.
+   It is some kind of risk based sign off indicating some changes of production issues in future.
+
+  •After discussing with business and if they are not ready to push release and are good to go with open issues.
+  •When QA is not having enough time to perform regression, we provide conditional sign-off.
+========================================================================================================================
+3.How do you deal with deferred defects?
+
+ •Check with business if it is ok to defer this defect.
+ •If business agrees, then make the defect status as deferred.
+ •It is QA engineers responsibility to get this added to backlog list and get them fixed in next release.
+========================================================================================================================
+4.Yes, Unit testing is very important. It makes QA life easy as bugs are found early in development phase only.
+
+ •Yes,Unit test is very important.It makes QA life easy as bugs are found early in development phase only.
+========================================================================================================================
+5.How do you deal when requirements are not clear?
+
+ •I will meet with PO as much as I can.
+ •I will check with SME and business teams to understand logics.
+ •I will document everything myself and get them reviewed by business.
+ •I will feedback to my manager for next sprint.
+
+========================================================================================================================
+6.How do you deal with non reproducible defects?
+
+  •I will open up a defect and get it closed by developer as non reproducible.
+  •Always make sure you report every unusual behavior.
+========================================================================================================================
+7.Explain your Jira Workflow?
+
+ •Once dev completed, the developer will say Ready to QA? -> QA assigned and assign it to me.
+ •I will be notified when a jira is assigned to my name. I will perform my validations and say QA Approved.
+  I will then assign it to UAT.
+   -Begin Process-> Dev complete -> Ready for QA -> QA Approved -> UAT approved -> Ready for Prod -> Production

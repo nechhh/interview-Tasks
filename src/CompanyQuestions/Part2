@@ -1,0 +1,190 @@
+Q1. Please describe your experience using JSON ? Describe your approach to validating software ?
+
+ -A JSON object contains data in the form of key/value pair.
+ here we have an example of Json object which we send in a POST request body.
+ -{
+    "name": "New York John F. Kennedy International (JFK)",
+    "details": "",
+      "gateCapacity":5000,
+      "cityId": 1,
+      "cityCode": "JFK"
+    }
+========================================================================================================================
+Q2.When would you plan/start automation during an agile sprint? What would be your approach?
+
+  -Mine own answer compare with others;
+    - We starts automation when codes deployed and manual testing is done.
+
+========================================================================================================================
+Q3.If you have to automate scripts for 2 or more websites that have similar
+   functionality what would your automation approach be?
+
+    -I will automate them individually  one by one and differently.
+========================================================================================================================
+Q4.Define your QA strategy on integration of automation with CI/CD?
+
+  -Continuous Integration;
+     Commit: The developer commits code regularly to the version control system
+     Build: The code is then built using suitable build tools to obtain an artifact.
+     Unit Test: The developer generally writes unit tests to test functionalities at ground level.
+      These are run along with the build.
+      Deploy to Development Environment: The build is then deployed onto a common
+      Development Environment where devs can test how their code works when combined with other developers’ code.
+ -Continuous Delivery;
+      Deploy to Testing Environment: Deployment to this environment happens once a development phase(sprint) is completed.
+        The last successful build is deployed onto the Testing Environment.
+        This environment will ideally be a mimic of the Production Environment.
+      Testing: QA teams run various automated tests like Integration testing, Regression testing, Load, and Performance testing.
+        This ensures that the product developed at the end of each sprint is ready to be released to the market.
+ -Continuous Deployment;
+      Deploy to Production Environment: Ideally, this happens at the end of the testing phase in each sprint.
+        But companies have preferred to take this step based on business strategy and needs.
+      Continuous Monitoring: This involves monitoring the product’s performance,
+        the underlying server status and ensuring the sanity and security of the Production Environment.
+             CONTINUOUS INTEGRATION===============>>>CONTINUOUS DELIVERY==================>>>CONTINUOUS DEPLOYMENT
+ (Commit->Build->Unit->Deploy to Dev envr. ) (Deploy to Test envr->Testing)   (deploy to Prod. envr.->Continuous Monitoring  )
+========================================================================================================================
+Q5.What would be your QA strategy for a release within an agile sprint?
+
+ -QA strategy is to test the final version of the software,make sure QA is signed-off.
+ -successfully achieve regression before release make sure everything is works as expected.
+
+
+========================================================================================================================
+Q6.Use Case: You are working on a time sensitive project and you realize the
+   quality of the code is not satisfactory. How would you handle this situation?
+
+  -I will report the situation to the manager and client they can make better decision.
+  -I think we have to report the clients and clients and managers can make a decision, still do the release or
+  waits for to be fixed.
+========================================================================================================================
+Q7. What goes in header of API request?
+
+
+   • Authorization.
+   •content-type
+
+========================================================================================================================
+Q8.What’s the difference between PUT and POST, PUT and PATCH?
+
+ In post we send a create record to server
+ With PUT we send a Update record to server
+ Patch updates a partial of record
+
+========================================================================================================================
+Q9.can you explain;Response codes 4xx, 5xx in general and few particular(401, 403, 501 etc),please.
+
+ 4xx codes occurs when clients has error.
+ 5xx codes occurs when server has errors.
+ 401-> Unauthorized.
+ 403->client is not allowed.
+ 501->The server does not support the functionality.
+========================================================================================================================
+10.Explain micro services, please.
+
+ -Microservices are an architectural approach to creating cloud applications.
+ Each application is built as a set of services, and each service runs in its own processes and communicates through APIs
+
+
+========================================================================================================================
+Q11.What is Composition in Java?
+  -Composition in java is the design technique to implement has-a relationship in classes
+  - If you are looking for code reuse and the relationship between two classes is has-a
+     then you should use composition rather than inheritance.
+========================================================================================================================
+Q12.How would you test mobile app after web app?
+
+  -The mobile device is a system, that has not powerful stuffing. So, it can not work as a personal computer.
+  -The mobile application testing in provided on handsets ( Apple, Samsung, Nokia, etc.), while the
+   desktop app is tested on a central processor.
+   •Documentation Testing.
+   •Functional testing.
+   •Usability testing.
+   •UI (User Interface) testing
+   •Compatibility (Configuration) testing
+   •Perfomance testing.
+   •Security testing.
+   •Recovery testing.
+========================================================================================================================
+Q13.Why use public access modifier in framework?
+
+  -for make a class,method or variable accessible from all points of project.
+
+========================================================================================================================
+Q14.What is PageFactory.initElements();?
+
+  -we use it in our framework to initialize all the web elements located by @FindBy annotation.
+========================================================================================================================
+Q15.How to convert given xpass to css?
+
+========================================================================================================================
+
+Q16.Java SOLID principles and how to implement in framework?
+
+
+
+ -SOLID principles are object-oriented design concepts relevant to software development.
+
+ •Single Responsibility Principle;Each class should be responsible for a single part or functionality of the system.
+         public class Vehicle {
+             public void printDetails() {}
+             public double calculateValue() {}
+             public void addVehicleToDB() {}
+         }
+         we can separate the above class into three classes with separate responsibilities.
+
+ •Open-closed principle;Software entities (e.g., classes, modules, functions) should be open for an extension, but closed for modification.
+     -public class VehicleCalculations {
+          public double calculateValue(Vehicle v) {
+              if (v instanceof Car) {
+                  return v.getValue() * 0.8;
+              if (v instanceof Bike) {
+                  return v.getValue() * 0.5;
+
+          }
+      }
+     -Suppose we now want to add another subclass called Truck. We would have to modify the
+       above class by adding another if statement, which goes against the Open-Closed Principle.
+     -A better approach would be for the subclasses Car and Truck to override the calculateValue method:
+
+ •Liskov substitution principle;The Liskov Substitution Principle (LSP) applies to inheritance hierarchies
+     -public class Rectangle {
+          private double height;
+          private double width;
+          public void setHeight(double h) { height = h; }
+          public void setWidht(double w) { width = w; }
+          ...
+      }
+      public class Square extends Rectangle {
+          public void setHeight(double h) {
+              super.setHeight(h);
+              super.setWidth(h);
+          }
+          public void setWidth(double w) {
+              super.setHeight(w);
+              super.setWidth(w);
+          }
+      }
+
+ • Interface segregation principle;states that clients should not be forced to depend upon interface members they do not use.
+  Suppose there’s an interface for vehicle and a Bike class:As you can see, it does not make sense for a Bike class
+   to implement the openDoors() method as a bike does not have any doors!
+
+ •Dependency inversion principle;The Dependency Inversion Principle (DIP) states that we should depend on abstractions
+  (interfaces and abstract classes) instead of concrete implementations (classes).
+   The abstractions should not depend on details; instead, the details should depend on abstractions.
+
+
+
+Q18.Difference between regression and re-test?
+Q19.Explain regression and smoke, please.
+Q20.Why overloading methods? (examples from real life)
+Q21.What is thread safe or Synchronized?
+Extra:
+    CodeTask: find sum of the squares of only even numbers in given
+    arrayList(put in method, code in third party web environment).
+    Theory q: how would you test(and what) method:
+    static String method(String a, String b){
+    //some code
+    return string;
+    }

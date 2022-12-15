@@ -1,0 +1,81 @@
+Tell About Your Framework
+
+FIRST APPROACH TO EXPLAIN FRAMEWORK
+
+Let me elaborate on the structure of my framework.
+
+Maven;
+   We have Maven, where we build our project structure,Manage Project dependencies and automated scripts.
+   in the POM file we add all the require dependencies(Selenium,Cucumber,JUnit,JDBC,Rest Assured etc).
+Test Runner;
+   It is the execution point of our framework.In our runner class using cucumber options we specify configurations of
+   our tests.We have separate smoke,regression and API JUnit runner classes.
+Cucumber Hooks:
+   I have  @Before and @After Annotations.In Before we call the setUp method that initializes our driver and We call
+   the method to initialize all page elements.Also using @After hook We are taking screenShots and quit the browser.
+Feature File;
+   Here we write our test cases to test UI,Database and API.We write our test cases using gherkin language.
+   We also use tags to put test cases in smoke or regression
+Step Definition:
+   Here we implementing our automation scripts and logic Using selenium and java
+   languages and performing validations using JUnit Assertions.
+Pages:
+   My framework build usign POM approach to eliminate code redundancy,improve code reusability and make it easy to maintain.
+   We are storing information about pages.We are using @findBy annotation to locate the element and PageFactory to initialize all elements.
+Configs Reader;
+   in this class We extract the values of our browser and url from properties file and using those values doing WebDriver initialization
+   and navigating to specific urls
+Common Method;
+   we describe the common reusable function for example; handling alerts, frames and windows, taking screenshots, explicit waits and
+   javascript executor.
+Excel Utility:
+   In this class we store functions to open,read and extract data from Excel.
+DBUtility;
+   In this class we store the functions to open database connections, extract data from database and store in
+   Java Data Structure, such as List, Map or List of Maps.
+Constants;
+   this class holds the information which is static final in nature such as path to the configurations,implicit and explicit waits.
+Target:
+   All cucumber HTML and advanced reports will be generated successfully in the target folder.
+Version Control:
+   We are using GIT for storing all the scripts at a remote repository-Github.
+Jenkins:
+   We are using Jenkins for Continuous Integration.We execute
+   test scripts daily or whenever a code is pushed.also we can execute based on schedule.
+
+
+SECOND APPROACH TO EXPLAIN FRAMEWORK
+
+
+First of all we are using a  Cucumber framework and it is a hybrid framework, which is supports
+BDD and Data Driven Testing. We are using Maven project management tool which
+is helps us to configure our dependencies such as  Cucumber,Selenium, JUNIT, JDBC , RestAssured, Apache Poi.
+In our project we devided into two parts , Java and resources. In resources we have non coding parts.
+Such as config , test data and features. In Config.properties  we store our information such as browser name ,
+username , password, url.
+  In feature files we write down our test cases in Gherkin language.
+  And in testData we have data files like Excel which  helps us to do data driven testing.
+  After writing down our test cases,We run our runner class by setting the dry run to true ,
+  this helps us to get all the step definitions to be implemented.
+  (We also have other options in our runner class, such as glue= which locates our step class which we want to run
+  monocrome= to get a cleaner and more readable console ,  we have tags= to specify what tests to run and we have
+  plugin= where we put our report file path and what type of reports )
+  we also have rerun option which helps to re-run the failed test cases instead of running all the test cases ,
+  it will run only the failed ones.
+  We store our reports inside the Target file. In Utils we have our contestants , Excel readers , DataBaseUtilities, and API constants.
+  In pages  we use POM ,In which we have a separate class for every page on the application where we store all the webElements,
+  that way if the developers change or update a location of an element we can easily change it in our pages.
+  This helps us to maintain our framework easily.
+  In our steps package we have our steps that needs to be implemented.
+   We also have hooks inside that package which helps us to run our code before and after every scenario.
+    In hooks we can open the browser and launch the application by using  before annotation ,
+     in after annotation we take a screenshot and close the browser.
+      In our utility package we have our common methods class where we store all our common methods that we gonna be using multiple times.
+       This approach gives us code reusability , and saves us from code redundancy.
+        this is prety much about my framework. if you want me to go in more details about any part of my framework pls feel free to ask.
+
+
+
+
+
+

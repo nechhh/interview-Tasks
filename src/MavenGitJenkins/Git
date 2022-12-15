@@ -1,0 +1,141 @@
+Git
+
+1.What is git ?
+
+  -Version control tool.
+===================================================================================================================
+2.What is a version control tool ?
+
+ -We can keep track of diff. version of our code.
+
+===================================================================================================================
+3.What is the function of git clone ?
+
+   - git clone is a command that help us to download the whole remote repository to our local computer.
+
+===================================================================================================================
+4.Diff in git clone /and download code from the github ?
+
+  -We do not get to have previous commits if we download the code.
+
+ ===================================================================================================================
+ 5.Hot to create a repo in git ?
+
+  -git init
+===================================================================================================================
+ 6. What is the purpose of the command git status ?
+
+  git status is the command that tells us about the tracked , untracked files ,modified files
+  tracked files are mentioned in a green color
+  untracked files are mentioned in a red color
+===================================================================================================================
+7.  Explain the git workflow.?
+
+  3 stage architecture.
+    -1.Working Directory
+    -2.Staging Area
+    -3.Repo
+ ===================================================================================================================
+   8.What is the advantage of having a staging area?
+
+   -Temporary backup of our codes
+   -Before they go into the repo
+   -Cleaner commit history
+
+===================================================================================================================
+9.Purpose of the following commands ?
+
+   git push -->to send to commit to remote repository
+   git fetch --> to check if there is any update in the remote repository
+   git pull--> to download the latest updates from the remote repository
+===================================================================================================================
+10.How can we see who updated the last commit ?
+
+  -git log --> each and every commit is signed with the author name
+
+===================================================================================================================
+11. What is the purpose of git stash ?
+
+ -git stash help us save the changes in our code in the stashing area,reverts the condition of our working directory
+ to that of the latest commit in the repository.
+===================================================================================================================
+12.Major use cases of git stash ?
+
+ -situation;
+           You accidentally made some changes on the wrong branch
+   solution:
+           git stash -m "message"-->git checkout branchname-->git stash apply index[0,1,2,3] (git stash apply 0)
+===================================================================================================================
+13.What is HEAD ?
+
+  -the head is the current commit in the working directory.
+===================================================================================================================
+14.What is fast Forward merge.?
+
+  -In a fast Forward Merge the commits on the child Branch are moved under the Parent branch (the Parent branch
+  starts to point to the commits in the child branch.) and there are no new commits.
+
+===================================================================================================================
+15.What is a git conflict ?
+
+ A git conflict occurs when two people are changing the same files,and the same lines on those files,then on merging
+ those file a git conflict occurs.
+===================================================================================================================
+16.What is the best strategy to avoid conflicts ?
+
+ -Update your branch regularly.
+ -Work on Short living branches.
+ -Strong communication
+ -Proper planning
+ ===================================================================================================================
+Branches
+   •$ git branch [branch-name]   Creates a new branch
+
+   •$ git checkout [branch-name]   Combines the specified branch’s history into the current branch. This is usually done
+    in pull requests, but is an important Git operation.
+   •git branch -d [branch-name]  Deletes the specified branch
+
+Synchronize changes
+      Synchronize your local repository with the remote repository on GitHub.com
+
+      •git fetch; Downloads all history from the remote tracking branches
+      •git merge;Combines remote tracking branch into current local branch
+
+Make changes; Browse and inspect the evolution of project files
+
+ •git log; Lists version history for the current branch
+ •git log --follow [file]; Lists version history for a file, including renames
+ •git diff [first-branch]...[second-branch]; Shows content differences between two branches
+ • git show [commit];Outputs metadata and content changes of the specified commit
+ •git add [file];Snapshots the file in preparation for versioning
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

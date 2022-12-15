@@ -1,0 +1,476 @@
+
+Q9;Versions of java you worked with? What version of java do you currently use in
+   your framework? Difference between JRE, JDK ?
+
+Ans:
+  -Currently I am using Java 8.
+  -Java 8 and 11 have Long term support.
+  -Why java 8 64% because it was not free after that.
+
+  Why not use latest version
+  Might have bugs
+  Training cost
+  Takes time
+  Need to upgrade other tools
+
+  JRE stands for Java Runtime Environment which we usually download as Java
+  software. The JRE consists of the Java Virtual Machine.
+
+  JDK stands for Java Development Kit is a superset of the JRE and includes everything
+  that the JRE contains.
+
+  JVM stands for Java Virtual machine. It translates and executes the Java bytecode.
+==================================================================================================================
+Q10. What is a method? What is the main method? Why do we need one in java? Do we
+ have to have a main method in java?
+
+Ans:
+  -A method is a block of code which only runs when it is called.
+   Methods are used to perform certain actions, and they are also known as functions.
+
+  -Main method is the starting point of an application.Whenever we execute a program, the main()
+  is the first function to be executed. We can call other functions from the main to execute them.
+==================================================================================================================
+Q11. Explain public static void main (String args[])?
+
+Ans:
+  -public: it is an access modifier that means it will be accessible by any Class.
+  -static: is a keyword to call this method directly using class name without creating an object of it.
+  -void: it is a return type i.e. it does not return any value.
+  -main(): it is the name of the method.
+  -string args[]: it’s a command line argument passed to the main method.
+ ==================================================================================================================
+Q12. What are Access Modifiers (Private,public,protected)? How did you use them?
+
+Ans:
+  -public: A class or interface may be accessed from outside the package.
+  -protected: Accessed by other classes in the same package.
+  -default: When no access modifier is specified for a class.
+  -private: Accessed only within the class in which they are declared.
+  Note: Access modifier cannot be applied for local variables.
+
+  -In our framework we follow page object model design pattern, in page classes we store
+   WebElements as public to give visibility to our test classes in different package
+    i.e;@FindBy(id="txtUsername")
+        public WebElement username;
+   -Also in our framework we build utility classes where we store methods to work with
+    webelements, property files, xl files and we give public accessibility to those methods
+
+       public static void sendText(WebElement element, String value) {
+       element.clear();
+       element.sendKeys(value);
+       }
+==================================================================================================================
+Q13. What is an instance variable and how do you use it? What is the difference between
+ local and instance variables?
+
+Ans:
+ -Variables which are declared inside the class,but outside a method,constructor or any block are called instance variables.
+ -Variables which are declared inside a method or constructor or blocks are called local variables.
+
+ i.e;
+    Example of Instance Variable from the framework
+    @FindBy(xpath="//img[contains(@src, 'logo')]")
+    public WebElement logo;
+==================================================================================================================
+Q14. How can we access variables without creating an object instance of it? Difference
+ between Instance Variable and static Variable? What is a static keyword in java?
+ Where did you use static in your framework?
+
+Ans:
+  -Static variables are declared with the static keyword in a class, but outside a method, constructor or a block.
+  -By declaring a variable as a static we can access it from different classes without creating an Object
+  those variables called class variables and also known as static variables.
+  -To access instance variables we need to create an object of the Class they belong to.
+  -Class variables only have one copy that is shared by all the different objects of a
+   class, whereas every object has its own personal copy of an instance variable.
+   -So, instance variables across different objects can have different values,whereas
+   class variables across different objects can have only one value.
+
+   Usage of static keyword in framework:
+   In our utility package we have a class where we store common methods, such as wait,
+   switch between frames, clicking on buttons, selecting values from drop down. So
+   those methods are written using static keyword and we can easily access them in our
+   program.
+   public static void click(WebElement element) {
+   waitForClickability(element);
+   element.click();
+   }
+   In our Constants Class we have static variables
+==================================================================================================================
+Q15. What is a constructor? Use of constructor in class? Can you make the constructor
+ static? What is the difference between constructor and method? Can we overload a
+ constructor?
+
+Ans:
+   -A constructor is a “special method” whose task is to initialize the object of its class.
+   -Constructors cannot be abstract, final, static.
+   -Rules to create constructor:
+        1. Constructor name class name must be the same.
+        2. Constructor doesn't has any return type.
+        3. Constructor may or may not have parameters.
+
+        The primary use of constructor is to initialize the instance variables.
+
+● Constructor must not have a return type whereas methods must have a return type.
+● Constructor name is the same as the class name where the method may or may not
+be the same class name.
+
+     Example of constructor from framework
+     creating constructor to initialize instance variables
+         public class AddEmployeePage {
+         @FindBy(id="firstName")
+         public WebElement firstName;
+         public AddEmployeePage() {
+         PageFactory.initElements(CommonMethods.driver, this);
+         }
+         }
+         WE CAN OVERLOAD CONSTRUCTOR (using different number or type of
+         parameters)
+
+==================================================================================================================
+Q16. Super vs super()? this vs this()? Can super() and this() keywords be in the same
+ constructor?
+
+Ans:
+  -● this keyword is used to refer to the current object and differentiate between local and instance variables.
+  ● this() is used to access one constructor from another where both constructors belong to the same class.
+  ● super keyword is used to call super class(parent class/ base class) variables and methods.
+  ● super() is used to call a superclass constructor from a subclass constructor.
+==================================================================================================================
+Q17. Difference between an abstract class and interface? Can we create an object for an
+     abstract class? interface? When to use abstract class vs interface in Java?
+
+Ans:
+  - interface is a contract that is similar to a class but all the fields inside a class are all public static final (constants).
+  - Abstraction is the process of hiding the implementation details and only showing the functionality. it's the 3rd pilar of OOPS.
+
+  diff:
+    -The abstract keyword is used to declare abstract class.-The interface keyword is used to declare interface
+    -Abstract class does not support multiple inheritance.-Interface support multiple inheritance.
+    -Abstract class contains Constructors.-Interface doesn't contain Constructors.
+    -An abstract class can contain access
+     modifiers for the methods,properties(variables).-An interface cannot have
+     access modifiers by default everything is assumed as public.
+
+     We cannot create an object of interface or an abstract class !
+
+     ● An abstract class is also good if you want to be able to declare non-public members. In an
+     interface, all methods must be public.
+
+     -Practical Example of an Interface:
+      Basic statement we all know in Selenium is
+      WebDriver driver = new FirefoxDriver();
+ ================================================================================================================
+Q18. Explain OOPS concepts? Is java 100% object oriented?
+
+Ans:
+  -4 main OOPS concepts: inheritance, polymorphism, abstraction and encapsulation.
+
+   Inheritance is a mechanism in which one object acquires all the properties and behaviors of a parent object.
+   Polymorphism; is the ability of an object to take on many forms.
+   Abstraction is a process of hiding the implementation of internal details and showing the functionality to the users.
+    Encapsulation;We can hide direct access to data by using a private key and
+    we can access private data by using getter and setter methods.
+ ================================================================================================================
+Q19. What is inheritance and benefits of it? Types of inheritance? How do you use it in your code?
+
+Ans:
+  -Inheritance in Java is a concept that acquires the properties(Variables)&Methods(behaviors) from one class to other classes.
+  ● We are achieving the inheritance concept by using extends keyword. Also known as is-a
+  relationship.
+
+  -Types of Inheritance:
+      ●Single Inheritance - single base class and single derived class.
+      ●Hierarchical Inheritance - when a class has more than one child classes (subclasses)
+      ●Multilevel; ClassA->ClassB->ClassC
+      ●Multiple Inheritance;When one derived class inherite more than one parent class
+      ●Hybrid Inheritance; when we have more than one combination.(posible only through interface)
+
+      Usage of inheritance in real time project;
+      In our current Cucumber framework we have BaseClass where we initialize the WebDriver interface.
+      And after we extend the Base Class in other classes such as
+      PageInitializer and to the Common methods where we have functions to work with Web Browser.
+
+ ================================================================================================================
+ Q20. What is polymorphism? Types of polymorphism?
+
+Answ:
+   -Polymorphism is the ability of an object to take on many forms.
+   -Combination of overloading and overriding is known as Polymorphism.
+
+   There are two types of Polymorphism in Java
+      1. Compile time polymorphism (Static binding) – Method overloading
+      2. Runtime polymorphism (Dynamic binding) – Method overriding
+
+================================================================================================================
+ Q21. Method overloading & overriding? How do you use it in your framework? Any
+ example or practical usage of Run time polymorphism?
+
+ -Method overloading;
+                  it occurs when we have two or more methods with same name but diff.parameters.
+ -Method overriding;
+                 Declaring a method in child class which is already present in the parent class is called Method Overriding.
+                 Practical Usage:
+                 1. Implementation of WebDriver interface.
+                 WebDriver driver = new FirefoxDriver();
+                 WebDriver driver = new ChromeDriver();
+                 2. Implementation of iTestListener interface.
+                 public class Listener implements ITestListener {
+                 @Override
+                 public void onTestStart(ITestResult result) {//for method
+                 System.out.println("Starting Test: "+result.getName());
+                 }
+                 @Override
+                 public void onTestSuccess(ITestResult result) {
+                 System.out.println("Test case passed: "+result.getName());
+                 }
+================================================================================================================
+Q22. Can we override/overload the main method? Explain the reason? Can you override
+ the static method? Can we overload and override private methods?
+
+Ans:
+   -We cannot override a static method,so we cannot override the main method.
+   -you can overload the main method in Java. But the program doesn't execute the
+    -overloaded main method when you run your program; you have to call the overloaded main method from the actual main method.
+    -In java not possible to override private methods because these methods are specific to
+     classes, not visible in child classes.
+================================================================================================================
+Q23. Can we achieve 100% abstraction in JAVA?
+
+Ans:In JAVA abstraction can be achieved with the help of Abstract Classes and Interfaces.
+    Using abstract class we can achieve 0 to 100% or partial abstraction.
+    Using interfaces we can achieve 100% or full abstraction.
+================================================================================================================
+
+Q24. What is encapsulation?
+  -It is the technique of making the fields in a class private and providing access to the fields via public methods.
+         public class ExcelUtility {
+         private static Workbook wbook;
+         private static Sheet sheet;
+         public static Workbook getWorkbook(String filePath) {
+         try {
+         FileInputStream fis = new FileInputStream(filePath);
+         wbook = new XSSFWorkbook(fis);
+         } catch (FileNotFoundException e) {
+         e.printStackTrace();
+         } catch (IOException e) {
+         e.printStackTrace();
+         }
+         return wbook;
+         }
+         public static Sheet getSheet(String filePath, String sheetName) {
+         return getWorkbook(filePath).getSheet(sheetName);
+         }
+         }
+================================================================================================================
+Q25. What are the primitives and wrapper classes?
+
+Ans; Primitives are data types in Java. There are a total of 8 primitive data types in Java:
+     byte, short, int, long, float, double, char, boolean.
+     Every primitive data type has a class dedicated to it and these are known as wrapper
+     classes. These classes wrap the primitive data type into an object of that class.
+
+================================================================================================================
+Q26. What is collection in Java and what type of collections have you used?
+
+Ans:
+  -Collection Framework which defines several classes and interfaces to represent a group of objects as a single unit.
+  -Maps are not part of collection but built based on the collection concepts
+================================================================================================================
+Q27. What is array and Arraylist (List)? Difference between them? ArrayList vs LinkedList?
+
+Ans;
+  -An array is a container object that holds a fixed number of values.
+  -ArrayList is a class which implements the List interface of collection framework.
+  -ArrayList is a dynamic data structure, we can add and remove
+   the elements from ArrayList and size will be adjusted automatically.
+
+   a) Difference between ArrayList vs LinkedList?
+     -ArrayList and LinkedList, both implement List interface.
+     -Both are non synchronized classes and both  allow duplicate elements.
+
+    ● Manipulation with ArrayList is slow because it internally uses an array. If any
+    element is removed from the array, all the bits are shifted in memory.
+     ● ArrayList is better for storing and accessing data.
+     ● Manipulation with LinkedList is faster than ArrayList because it uses a doubly
+     linked list, so no bit shifting is required in memory.(consist of value + pointer to previous node and pointer to the next node)
+     ● LinkedList is better for manipulating data.
+
+     b) ArrayList vs Vector?
+     Both implement List Interface and maintains insertion order
+     ArrayList is not synchronized, so it is fast.
+     Vector - is synchronized, so it is slow.
+
+================================================================================================================
+Q28. What is the difference between HashSet vs HashMap ?
+
+Answ:
+   1. HashSet class implements Set interface.
+   3. HashSet does not allow duplicate elements.
+   4. HashSet permits to have a single null value.
+   5. HashSet is not synchronized.
+
+   1. HashMap class implements the Map interface
+   2. HashMap is used for storing Key, Value paired objects.
+   3. HashMap does not allow duplicate keys however it allows having duplicate values.
+   4. HashMap permits a single null key and any number of null values.
+   5. HashMap is not synchronized.
+
+================================================================================================================
+   Q29. What is a Map? How did you use it in your framework?
+
+Ans:
+   Java Map Interface. A map contains values on the basis of key, i.e. key and value pairs.
+   Each key and value pair is known as an entry.Map is a collection of entry objects.
+
+   -HashMap: it makes no guarantees concerning the order of iteration, HashMap doesn’t maintain the insertion order of elements.
+   -LinkedHashMap: insertion-order in maintained
+    TreeMap:it stores ist elements in a red-black tree, it is slower than HashMap.It sort based on key
+    -HashTable:it also stores the data in a key-value pair.It does not allow any Null key or Values.
+================================================================================================================
+Q30. What is the difference between HashTable vs HashMap ?
+
+ Ans:
+  -Both HashMap and Hashtable implement Map Interface
+  HashMap;
+    ● HashMap is non synchronized, so it is not-thread safe
+    ● HashMap is fast
+    ● HashMap allows one null key and multiple null values
+  HashTable is synchronized,so it is thread-safe
+  HashTable is slow
+  HashTable doesn't allow any null key or value
+================================================================================================================
+  Q31. How can you handle exceptions? Types of exceptions you faced in your project?
+   What is the parent of all exceptions?
+Ans:
+ An Exception is a problem that can occur during the normal flow of execution.
+ Depending on the situation, we can use try and catch blocks.
+
+ Throwable class is parent of all Exceptions:
+
+ Types of Exception:
+   -Checked Exception
+     ● ClassNotFoundException
+     ● InstantiationException
+     ● FileNotFoundException
+   -Unchecked Exception;
+     ● ArithmeticException
+     ● ArrayIndexOutOfBoundsException
+     ● NullPointerException
+     ● IllegalArgumentException
+ ================================================================================================================
+ Q32. How many catch blocks can we have? Which catch block will get executed if you get ArithmeticException?
+
+ Ans;
+   There can be any number of catch blocks for a single try.
+   Arithmetic catch (ArithmeticException e) block or the general exception block.
+ ================================================================================================================
+Q33. What is the difference between throw and throws?
+
+ANS;
+  The throw keyword is used to throw an exception explicitly. It can throw only one exception at a time.
+  The throws keyword can be used to declare multiple exceptions, separated by a comma.
+================================================================================================================
+Q34. What is the difference between final, finally and finalize?
+
+ANS:
+  -final is an access modifier
+  -finally is the block in Exception Handling
+  -finalize is the method of object class;cleanup on objects that the garbage collector has found to be unreachable
+================================================================================================================
+Q35. What is the difference between String and StringBuffer? String and StringBuilder?
+
+Ans;
+  -String Object is immutable whereas StringBuffer object is mutable.
+  -There are 2 ways to make String mutable: 1. by using StringBuffer 2. by using StringBuilder.
+  StringBuffer vs StringBuilder?
+    StringBuffer is thread-safe (synchronized)
+    StringBuilder is not thread-safe
+================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

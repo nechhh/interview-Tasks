@@ -1,0 +1,153 @@
+
+FEEDBACK LOOPS
+I think it’s very important to have a feedback loop, where
+you’re constantly thinking about what you’ve done and
+how you could be doing it better.
+—Elon Musk
+
+1.What is agile ?
+
+ •first agile is a methodology;where we have a lot of activities like;scrum,iterations,stand up calls,retrospective,etc.
+ Sprint mean a particular duration,(1 or 2 week and period)which we have to completed requirements.
+
+
+========================================================================================================================
+2.what are burn Up and burn Down ?
+
+  •burnUp and burnDown charts are used to keep track the progress of the project.
+  •burnUp;represent how much work has been completed.
+  •burnDown;Represent the remaining work in a particular project.
+========================================================================================================================
+3.Roles in Scrum ?
+
+ •Project owner;who takes the responsibility of managing the project end to end.work with business and gets
+   the requirement and deliver to engineers.
+ •Scrum master;work with scrum team,makes sure works completed on time,If you have block(if your work
+ depend on another team and you not able to use that environment) or any problem solve that problem.
+ •Scrum Team;each and every member are scrum team.(dev team,QA team,Project Manager,Scrum Master).
+ (BackLog; complete requirement which are you defined.)
+========================================================================================================================
+4.What is Product backlog and Sprint BackLog;
+
+  •Product backlog; is maintained by product owner,contains every future or requirement of the product(assume
+  160 requirement for project all are there).Sprint Backlog or User Stories PO picks some requirement from PB and
+  bring to sprint backlog.We convert them to user stories.
+  adds:
+  -Acceptance Criteria Defined by PO.
+  -All Sprint process is happening properly define by Scrum Master.
+
+
+========================================================================================================================
+5.Explain Velocity In Agile ?
+
+ •it is a kind of metric,a kind of calculation which is calculated once all the effort and estimation that we have given.
+ •for each story we have to give point.forex; I give 3 which mean 2 days for dev and 1 day for QA
+ •valocity will calculate the estimation which we have given(we give in sprint planing meeting.)
+
+ *forex there is 10 user story.we give 5 story point each of them and 5*10=50, it means it will takes 50 days.
+   cause some issue and could cover 35 points it means 15 point are  still pending.it means we could not complete
+   this is called checking velocity,velocity of sprint,velocity of the iteration.
+   thus next time we can say okay instead of 10 user stories,we should cover 6-7 user stories.
+========================================================================================================================
+6.Explain Difference between agile and traditional waterfall ?
+
+  •In waterfall we know everything and it is a step by step process.requirement->coding->testing->deploy production env.
+  •In Agile everything is paralel requirment-> Devs and QA's work on paralel.
+  •Agile is very fast compare to waterfall.
+========================================================================================================================
+7.Explain Pair programing/review and its benefit ?
+
+  •two programmer works as team one write codes and other one review codes.They can switch their codes.
+  Benefit;Iprove code quality,when we write codes we can not see our mistakes this is human nature.but our
+  colleague can define our mistakes.also knowledge transfer is easy.
+
+========================================================================================================================
+8.What is re-factoring ?
+
+  •let's say a company write some code 5 year ago.and they want to change  codes with new technique.without changing
+   functionality this called re-factoring.
+========================================================================================================================
+9.Explain the Iterative and Incremental Development in Agile ?
+
+ •iterative development;It is a process which is deliver to costumer based on the feedback.let's say a product delivered
+   to costumer in 5 sprints and client wants some changes.team work on again 1-2 sprints and release it again.
+ •Incremental Development :we do release in small small phase let's say 1 week or every sprint.
+========================================================================================================================
+10.How do you deal when requirements change frequently ?
+
+ •First discuss with PO to understand the exact requirement to update the test cases. don't start automation till
+ requirements finalize.When everybody signed of you can start automation.
+
+========================================================================================================================
+11.What is a test stub ?
+ •let's say two modules are there,M1 and M2 and they are interacting with each other.but M1 is developed and giving to
+ QA now if you want to perform end-to-end testing so you want to also test M2 to make sure they communicate with each other
+ or not,But M2 is not available it is still under development.
+ •In that case you will create one stub;it means which you created will just a dummy of M2 and it will give you output
+  like M2.That calls test stub/Mock.(Devs or QA team create it )
+========================================================================================================================
+12.What quality should a good tester have ?
+
+  1.typically all testers should be able to understand the requirements
+  2.Agile tester should know Agile concepts and principals.
+  3.As requirements keep changing,she should understand the risk involve in it.
+  4.Agile testers should be able to prioritize the work based on the requirements.
+  5.Communication is must for a tester,because it requires a lot of communication with devs and business associates.
+
+========================================================================================================================
+13.Epic User stories and tasks ?
+
+  •Epic;It is a superSet of userStories a group of related to user stories called epic.Let's say I hava an
+    epic,Under it I have N number of user stories (UserStory1,UserStory2,UserStory3,UserStory4,)all
+    those stories pointing to this particular epic.
+  •Task;Under the particular user story we create tasks.
+========================================================================================================================
+14.What is Task Board In agile ?
+ •Dashboard which is shows progress of the project.
+   •User story
+   •To Do
+   •In progress
+   •To verify(checks by PO)
+   •Done
+========================================================================================================================
+15.What is Test Driven Development (TDD) ?
+
+ •we write first test case and we run before write the code and based on result refactor the code to fulfill
+ the test requirement.
+========================================================================================================================
+16. How QA can add a value to an agile team ?
+
+ •QA is the most important guy in agile,they can give quick feedback to devs.about functionality work fine or not.
+ •Also automation is the most important thing on agile.
+ •QA can provide a value addition by thinking differently about the various scenarios to test a story.
+========================================================================================================================
+17.What is Scrum ban ?
+ • It is a combination of scrum and Kanban.
+========================================================================================================================
+18.What is Zero sprint ?
+
+  •It is the pre-step to the first sprint.Activities like Setting dev env,preparing backlog etc.
+========================================================================================================================
+19.What is Spike ?
+
+ •There may some issues or design problem in the project which need to be resolved first.We create "Spikes" to provide
+  the solution.they are two types functional and Technical.
+========================================================================================================================
+20.Name some Agile quality strategies.
+
+ •Re-factoring
+ •Small feedback cycles
+ •Dynamic code analysis
+ •Iteration
+ •Bug Bash;before giving costumer everybody sit in a room.and they hit the app,who find max bugs,this guy will be rewarded.
+========================================================================================================================
+21.What is importance of daily stand up meeting ?
+
+•it is essential for agile teams.What you did yesterday,What will you do today,What blocks you.
+========================================================================================================================
+
+
+
+
+
+

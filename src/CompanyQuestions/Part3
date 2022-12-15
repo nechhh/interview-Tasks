@@ -1,0 +1,136 @@
+1.Live interview: Launch browser,Navigate to Gmail,Input the username and password and sign in,Verify Home page
+ Log out,Close browser.
+ 2.What is Composition in Java?
+
+  •When two object associated each other. we can say -Has-A relation
+========================================================================================================================
+ 3.Where do you use OOPs in your framework examples ?
+  •Abstraction;In pom we write locators such as xpath, css, class,etc.we utilize these locators in tests but we can't see
+   the implementation of the methods.
+  •Interface; WebDriver driver=new Chromedriver(); is an use of interface
+  •inheritance;In cucumber we have multiple inheritance examples.
+  •PolyMorphism;combination of overloading and overriding both are examples,
+     •OverLoading;Implicit wait is a good example for overloading We provide diff Timestamp like SECOND,MINUTES,ETC.
+     •Overriding; Driver.get() and Driver.navigate methods are good examples for overriding.
+========================================================================================================================
+4.how do u collaborate with other team members? are u doing peer reviews ?
+
+  •Yes I do peer review for my colleague's codes tell what could be improved. we collaborate in all meeting.
+  also through github.
+========================================================================================================================
+Test plan and Test Strategy ?
+
+ •Strategy;
+   •What to do ?
+   •Goal ?
+   •Target ?
+   •How to do ?
+
+ •Plan
+   •Who should do ?
+   •When to do ?
+   •Efforts ?
+   •Risks ?
+   •Benefits ?
+ •
+
+========================================================================================================================
+ 5.what are your responsibilities?
+
+  •attend scrum meetings
+  •check my reports.
+  •write test cases and automate them.
+  •simply make sure to quality of product before it's release to product environment.
+  •and whenever my team need any help,help them.
+
+ ========================================================================================================================
+ 6.how are you involved in writing a test plan? How do your review it? what's the process ?
+   •I helped to test plan;to identify who is the best,Determine  benefit and risk, when to do ?
+   •I review to checks tests is it write based on acceptance criteria,And is it follow our framework approach also how it
+    could be improved.
+========================================================================================================================
+ 7.if we have a big feature, what is your approach to test it?
+
+  •My approach will be to divide it to smaller components.because in case of any failure it will be more easier to
+   find what is wrong and it will effect less functionality.
+========================================================================================================================
+ 8.what is DOM? what can you see there ?
+
+  •Document Object Model is a programing interface for web documents.it represent the page.we can se API and
+  information about UI.
+ ========================================================================================================================
+ 9.what if you can see the element only when you hover over it? how do u locate it?
+  •I can use some Action class method here.
+
+ ========================================================================================================================
+ 10.what is important for your in future job ?
+
+  •It is importance to improve my skill and It is important my relationship with team.And it is very important
+  vision of company.
+========================================================================================================================
+ 11.what would your current employer tell about you if I call him?
+   •he will not be happy to get your call.we did great job together.But will wish best for me and he will tell you
+    whenever someone need help in team necc will be there for help.
+ ========================================================================================================================
+ 12.QA Checklist – Before and After Deployment
+   •Before;
+     •Ensure the test cases are reviewed and approved.
+   After;first thing we as a QA team do is to get started with our Sanity test.
+ ========================================================================================================================
+13.What is Sanity Testing?
+
+ •it is performed after receiving a software build.to check bugs have been fixed or not.
+   Diff between Sanity Testing and smoke testing ?
+      •Smoke tests the critical functionality whereas Sanity tests checks bugs fixed.
+
+
+ ========================================================================================================================
+ 14.how would you describe good test case?
+
+  •If it is small,easy to understand,steps executed fast and result is as expected.I can say good test case.
+========================================================================================================================
+ 15.how would you make sure you have good quality on testing
+
+  •Simple and specific(anyone in the team should be able to execute without help of author)
+  •Easily identifiable with its name
+  •Reasonable probability of catching an defect.
+  •
+ ========================================================================================================================
+ 16.tell me about your deployment process ?
+
+
+
+
+
+
+
+ ========================================================================================================================
+ 17.what would you do before you push to deployment ?
+
+  •We will make sure there is no issue and it followed testing standards.
+
+ ========================================================================================================================
+ 18.how do you push code to deployment ?
+
+  •
+ ========================================================================================================================
+ 19.what do you do when developers works on coding ?
+
+   •
+ ========================================================================================================================
+ 20.do you write any test plans ?
+
+  •Yes I write,I determine who should do,when to do,What are benefits and risks.
+ ========================================================================================================================
+ 21.tell me about your release ?
+
+   •We do release  2 weeks we have release night.We works overtime mostly this day.And we have dinner during the release.
+
+ ========================================================================================================================
+ 22.if you do release every 4 weeks what happens to tickets in first sprint ?
+ ========================================================================================================================
+
+
+
+
+

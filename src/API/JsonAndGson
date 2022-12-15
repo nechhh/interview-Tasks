@@ -1,0 +1,21 @@
+*Json(JavaScript Object Notation) is a data exchange format to used between clients and server.
+
+ •Gson;is a library to map automatically from java object to Json and Json to Java Objects.  //add Gson dependency
+
+       •Java Object to Json(serialization);
+
+                            UserSimple  user=new UserSimple(){
+                            "fsdf":"fgdsf",
+                            "fsdf":"45",
+                            "fsdf":"gfgdf",
+                            "fgsdffsdef":"gfdfg",
+                            }
+                            -Gson gs=new Gson();//Gson instance      //serialization
+                             String json=gson.toJson(user)
+                              output:{"fsdf":"fgdsf","fsdf":"45","fsdf":"gfgdf","fgsdffsdef":"gfdfg",}
+
+                             -//deserialization
+                             String userJson="{"fsdf":"fgdsf","fsdf":"45","fsdf":"gfgdf","fgsdffsdef":"gfdfg",}";
+
+                             Gson gs=new Gson();
+                             gs.fromJson(userJson,UserSimple.com)

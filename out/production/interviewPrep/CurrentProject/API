@@ -1,0 +1,29 @@
+
+real Path Parameter example; key=vehicleId Value=VinNumber
+
+
+•private API
+
+      •CLAIM APIs(Create a claim,Track a claim)
+
+
+                (POST)Add image to claim//upload a picture of an accident and submit a claim.
+                    BODY
+                      Key=image     Value=imageAddress                           DESCRIPTION=Required
+                      Key=Comment   Value=Front passengers side bumper right after accident.  DESCRIPTION=Optional
+               -(GET);Get all images associated with accident
+               -(GET);Get all claim
+               -(POST);Create a claim
+                      {
+                       "created":"09.15.2022",
+                       "type":"AUTO",
+                       "lastUpdated":"10/09/2022",
+                       "AgentId":"4534545",
+                       "customerId":"43456456",
+                       }
+    •beneficiary
+
+    •Legacy Claims System
+
+    •Id verification
+•Open Insurance -Start here

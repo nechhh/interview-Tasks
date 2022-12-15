@@ -1,0 +1,325 @@
+1. Can you tell the difference between STLC (Software Testing Life Cycle) and SDLC
+(Software Development Life Cycle)?
+
+Ans:
+  -SDLC is a process in which a software product is either created, enhanced or maintained
+   -SDLC is consists of the following phases:
+      ● Planning Phase
+      ● Requirements gathering/Analysis phase
+      ● Design phase
+      ● Coding/Development/Implementation phase
+      ● Testing phase
+      ● Production phase
+   SDLC vs STLC
+     ● STLC is a very important phase of SDLC and the final product or the software
+     cannot be released without passing through the STLC process.
+     ● STLC is part of SDLC.
+==================+==================+==================+==================+==================+==================+
+1.3
+
+==================+==================+==================+==================+==================+==================+
+1.5 Question; What is requirement  traceability matrix (rtm) ?
+
+    -It used to prove that requirements have been fulfilled.
+    -typically documents requirements.
+
+2. Why do Software Applications have bugs?
+
+Answear;
+   There are various reasons why a system might have bugs;
+     -bad design
+     -coding errors
+     -continuous changes in requirements
+     -rushing to meet deadlines
+==================+==================+==================+==================+==================+==================+
+3. Can you tell the Difference between Verification and Validation?
+
+Ans:
+   Verification:
+         is when you are analyzing requirements, design documents, test plans Simply reviewing documents to
+          ensure everything is covered  and NO coding is involved.
+   Validation:
+             is when we are executing our test cases and actually writing code to verify the system.
+
+==================+==================+==================+==================+==================+==================+
+4. What is the difference between static and dynamic testing?
+
+Ans:
+   Static Testing (Done In Verification Stage):
+   Dynamic Testing (Done In Validation Stage)
+==================+==================+==================+==================+==================+==================+
+5. What Is the Difference between Black Box and White Box testing?
+
+Ans:
+  Black box testing:(UI)
+       it is usually done to check the functionality of an application. Basically, front-end testing.
+  White box testing:
+       is when you know the internal structure of the application meaning
+       you know coding and can perform unit testing as well.Also known as Code Based testing or Structural testing.
+==================+==================+==================+==================+==================+==================+
+6. Can you tell different types of testing you are aware of?
+
+    ● Unit testing
+    ● Integration testing
+    ● Regression testing
+    ● Ad-Hoc
+    ● Smoke testing
+    ● Performance testing
+    ● System testing
+    ● UAT Testing
+==================+==================+==================+==================+==================+==================+
+7. In which phase should testing begin?
+
+  -Testing should start at the requirements phase.We have to make sure requirements are
+   correct in the first place.
+
+==================+==================+==================+==================+==================+==================+
+8. What is Ad-Hoc Testing? Exploratory testing? Random Testing?
+
+Ans;
+    it is informal testing where you are testing without a test case and
+    randomly testing a module
+==================+==================+==================+==================+==================+==================+
+9. What is unit testing, and have you ever done unit testing?
+
+Ans;
+   Unit testing is a part of the white box testing and it is done by the developers before they
+   deploy their code from the Development environment to QA environment.
+==================+==================+==================+==================+==================+==================+
+10. What is Integration testing?
+
+Ans:Once every individual component is tested, we must make sure that when we integrate
+    these components together they must work as expected.
+==================+==================+==================+==================+==================+==================+
+11. What is the difference between UAT and QA? What is Acceptance testing?
+
+Ans:
+  UAT;is when tests passed QA then tests moves the UAT environment where again Testing conducted to make sure
+  no bugs have been missed.Also, UAT is mostly a business side client side that conducts it.
+==================+==================+==================+==================+==================+==================+
+12. What is system testing?
+
+Ans:
+  It is testing the entire system which includes but is not limited to the Front-end,
+  Back-end, Database, Server, Hardware, and any related Software product/application.
+==================+==================+==================+==================+==================+==================+
+13. What is Beta Testing?
+
+Ans:
+  Beta testing is conducted to gather feedback from the real-time usage of product.
+==================+==================+==================+==================+==================+==================+
+14. What is 508 Compliance testing?
+
+Ans;All websites are supposed to be 508 compliant meaning disabled personnel should be
+    able to use it.
+
+==================+==================+==================+==================+==================+==================+
+15. What is Boundary Testing
+Ans;Boundary testing is to make sure software accepts valid data inside the valid Boundary
+    and rejects invalid data outside the valid Boundary.
+
+==================+==================+==================+=================  =+==================+==================+
+16. What is Negative Testing and what is Positive Testing?
+
+Ans;
+   Negative; testing is testing the application/system with a negative scenario using
+             incorrect/invalid data and verifies if the application responds as expected.
+   Positive; testing is testing the application/system with correct and valid data and verifies
+             if the application responds as expected.
+==================+==================+==================+=================  =+==================+==================+
+17. What is non-functional testing? Have you done any performance testing?
+
+Ans: Performance testing (Can 5000 user’s login to the application at the same time?)
+     Security testing.
+     Simply say NO you have not done so and that performance testing was conducted by a separate team.
+==================+==================+==================+=================  =+==================+==================+
+18. What is Functional testing?
+
+Ans:
+   Simply, testing any functionality is functional testing.
+   Manual testers can be also called a functional Testers.
+   As a automation tester; you may be required to perform manual testing based on project.
+==================+==================+==================+=================  =+==================+==================+
+19. What is the difference between regression testing and retesting?
+
+Ans:Regression tests to ensure that modifications to a module or system do not have a negative effect
+ on previous functionalities.
+    It is performed when a new functionality is added or bug fix.we want to make sure other parts of
+    the app are still functioning correctly.
+    While retest is performed when a defect gets fixed and you have to retest the
+    functionality to see if it is really fixed or not.
+==================+==================+==================+==================+==================+==================+
+20. What is the difference between system testing and integration testing?
+
+Ans;System testing when the entire system is checked such as hardware,software,servers,database etc.,
+    Integration testing we test the integration between the individual modules is tested.
+==================+==================+==================+==================+==================+==================+
+21. What is a hotfix?;
+
+Ans;
+ a hotfix is a emergency issue that needs to be fixed right away and does not need go through a whole sprint cycle.it's
+ an extreme priority and clients want the critical issue fixed ASAP and deployed.
+ ==================+==================+==================+==================+==================+==================+
+22. When is a test considered to be successful?
+
+Ans;
+  Tests that cover more functionalities and discover more errors in your software product
+  are considered more successful.
+==================+==================+==================+==================+==================+==================+
+23. If there isn’t enough time for testing what would you do?
+
+ I will prioritize my test cases and tackle ones that cover most functionalities I will also check with my team members
+ if they can help me since I have been on agile projects wo work together in such matters.
+
+ When I prioritize here is what we look for:
+    -Which functionality is most visible t othe user ?
+    -Which fuctionality is has the most safety impact ?
+    -Which parts of the application were developed in rush or panic mode?
+ ==================+==================+==================+==================+==================+==================+
+24. What would you do if you end up with unclear requirements or requirements are
+not available?
+
+    -if BA is available to clarify with them as well.
+    -I would start to do some random testing to understand what is being asked.
+    -I will also check out our meeting notes, emails, and discussions.
+==================+==================+==================+==================+==================+==================+
+25. When do you know if you have enough test cases for your project or a specific
+module?
+
+  -If all requirements have at least one test case,then we can say we have covered everything.
+==================+==================+==================+==================+==================+==================+
+26. Tell us some key challenges you face in the Testing industry?
+
+  ● Requirements changing.
+  ● Application not stable.
+
+  ● Rush testing to meet deadline
+  ● Unclear requirements
+==================+==================+==================+==================+==================+==================+
+27. Can you do 100% manual testing and find all bugs?
+
+  No,it is impossible because there are a number of possibilities and scenarios. If we cover all functionalies and test
+  them then we can reduce the risk of bugs.
+  ==================+==================+==================+==================+==================+==================+
+28. What is a Test Plan?
+
+Ans;
+   The Test Plan document is usually prepared by the Test Lead or QA Manager
+ Components of the Test Plan:
+       ● Introduction
+       ● Test items
+       ● Features to be tested
+       ● Test techniques
+       ● Features pass or fail criteria
+
+==================+==================+==================+==================+==================+==================+
+29. What is Test Strategy?
+
+Ans:
+  A test strategy document is a high level document and normaly developed by the project manager.
+
+==================+==================+==================+==================+==================+==================+
+30. What is a test case and what does it include?
+
+Ans;
+   It is verify a feature or functionality of your software app.it included.
+    -Test Scenario/objective
+    -Pre condition
+    -Test case Id
+    -Test Data
+    -Expected result
+    -Actual Result
+    -Pass or Fail
+    -Comments
+==================+==================+==================+==================+==================+==================+
+31. What is Test Coverage?
+
+Ans:
+   Test coverage measures the percentage covered area to test the functionality.
+==================+==================+==================+==================+==================+==================+
+32. Who is responsible for writing test cases and test plans?
+
+Ans:
+   Test lead or even QA Manager is responsible for making a test plan.
+==================+==================+==================+==================+==================+==================+
+33. What is the difference between Test case and Test script?
+
+Ans:
+  They are same things.These terms can be used interchangeably.
+==================+==================+==================+==================+==================+==================+
+34. What is the Requirement Traceability Matrix?
+
+ •RTM is mapping requirements to test case and test cases to defect.
+ •If there is a defect we can go back and say which requirement is failed.
+ •It also tell us if we miss any test case for specific requirement.
+==================+==================+==================+==================+==================+==================+======
+35. What is test coverage?
+
+  What are we testing and How much are we testing
+==================+==================+==================+==================+==================+==================+======
+36. How do you define the bug life cycle?
+
+  •defect life cycle is a process in which defect goes through different stages in its entire life.
+  •This lifecycle starts as soon as a bug is reported by the tester and ends when a tester ensures
+  that the issue is fixed and won't occur again.
+  few examples are open, fixed, retest, reopened, reject, and closed.
+==================+==================+==================+==================+==================+==================+======
+37. How do you deal with a bug which is not consistently reproducible/intermittent?
+
+ •The best approach is to take a screenshot of it.
+ •If you are using Snagit you can even
+  capture video of it and note it down. Discuss the bug with the team so everyone can keep
+  an eye on it.
+
+==================+==================+==================+==================+==================+==================+======
+38. What would you do if a developer rejects your bug and refuses to fix it?
+
+ •Go back and retest it several times and make sure that it is a bug.
+ •Then check it against the requirements'
+ *Then set a meeting between Dev. and BA or lead.
+
+==================+==================+==================+==================+==================+==================+======
+39. What do you do when you find a bug?
+  •Retest,taking screenshot,and create/log a bug in jira with as posible as details.Environment found in,severity,priority etc.
+==================+==================+==================+==================+==================+==================+======
+40. Bug priority vs Bug severity
+
+ •Priority represents the importance of fixing a bug.
+ •Severity represents “how bad a bug is.” For example.
+
+==================+==================+==================+==================+==================+==================+======
+41. What is the difference between bug release and bug leakage?
+
+ •Bug release is when a version of the software is released with a set of known bugs.
+ •Bug leakage is something when the bug is discovered by the end users or customers.
+==================+==================+==================+==================+==================+==================+======
+42. Let's say you have a bug that comes in the day before the sprint is ending, do you let
+it go into production or move it to the next sprint?
+
+ •If the bug is of a very low priority and severity we will log it and fix it at a later time.
+ •but if it’s a show stopper we will never release it into production since it can cause other issues.
+==================+==================+==================+==================+==================+==================+======
+43. How many bugs do you find a day?
+
+  •we don't test every day.And we found more bug in when we crete a new functionality or make a big changing on it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

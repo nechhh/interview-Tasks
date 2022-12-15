@@ -1,0 +1,114 @@
+1. What is the current sprint you are working on
+
+    -Answer will depend on how long your sprints are and how long have you been on
+    that poject with the company.
+
+      -Let’s say if you say you are with the company for 1 year and you join the project at
+       sprint 5 and your sprints are 2 weeks long. Your sprint can be 29.
+==============================================================================================================
+2. What type of tests have you automated? How many test cases have you automated
+per day? When do you do automation in your sprint?
+
+ -Mostly I have automated functional regression tests (including smoke and regression,database and API testing)
+  and we do automation of user stories.
+  Whenever developers done with development of the user story and code is deployed
+  to a QA environment,I test the user story manually and then do automation.
+
+  -5-7 User Stories per Sprint(it also depends on user story size)
+  ? how do you do automation in your company ?
+
+==============================================================================================================
+3. What is smoke testing and how do you run it in your project? How many test cases
+are there and how often do you perform smoke testing?
+
+SMOKE TEST:
+       Smoke test is a process where the software build is deployed the QA environment and
+        is verified to ensure the stability of the app.All the critical functionalities would be put to test here.
+
+        A major benefit of smoke test is that it provides quick feedback.In simple terms,We verifying whether the important
+        features are working.
+        -We have a dedicated pipeline for our smoke test within our jenkins and since Jenkins is a wab based app.
+        Anyone can use it by using its URL.
+        We provide the following arguments during the initial configuration.
+
+        -whenever there is a code push our smoke test pipeline is automatically triggered.
+        -In my smoke suite I have around 18 scenarios that are executed within 12-15 mins.
+        -we runs smoke test daily to check the healt of our app.
+==============================================================================================================
+4. What is regression testing and how do you run it in your project? How many test
+cases are there and how often do you perform regression testing? How long does
+your regression suite run?
+
+   REGRESSION TESTING;
+        it is a type of testing where testers verify the previous functionality of  the app is working fine and
+        the new changes have not introduced any new bugs.
+
+         When we are going to performed regression testing;
+         -Bug fix
+         -New feature added
+         -Changes in existing feature
+         -Performance issue fix
+         -In my current job every 2 week we have release night.we work overtime this day.and we have dinner with team
+
+==============================================================================================================
+5.Tell me about your framework
+
+ Let me elaborate on the structure of my framework.
+
+ Cucumber:
+    Maven:
+       First we have maven project that helps us build project structure,manage project dependencies and execute automated scripts.
+       In the pom file we adda all dependencies that are required for project (Cucumber,Junit ,JDBC,Rest Assured etc.)
+
+    Test Runner:
+        It  is the execution point of our framework.In runner class using cucumber options we specify configurations of our tests.
+        We have seperate smoke,regression and API JUnit runner classes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

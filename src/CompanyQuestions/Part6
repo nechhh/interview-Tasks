@@ -1,0 +1,54 @@
+0. Have you developed any test plans, and what are the steps?
+
+  -Normally in our company test plan develops by management team and. But i developed.Based on the same structure.
+  the steps are;
+   -Fist we describe the overall about it.
+   -Then we need to determine the scope of the test plan.
+   -Then we need to look what would be the impact of new change on the system. such as jenkins pipeline performance.
+   -then specify acceptance criteria.
+   -Epic link On the Jira.
+   -Design Document
+   -determine Environment
+   -Hing Level Test Doc.
+========================================================================================================================
+1.Tell me about your contribution as an automation engineer.
+
+  •Testing New added futures in Automation framework.
+  •Keep framework up to date.
+  •Enhanced and maintain framework
+  •Automate test scrips and save time and money for company.
+  •Make sure as possible as deliver the bug free software product to the customer.
+
+========================================================================================================================
+2.Have you created frameworks from scratch?How would you build automation for a company where is no automation ?
+
+ •Yes I created framework from scratch.
+ •For a company which don't has automation framework.First of all I need to know about the company and team.
+ •What kind of team will use that framework so forex it there are non-technical peoples in the team. I would go with
+  a cucumber BDD framework this is usefully for non-tec people.if it is more tecnical team .
+
+
+
+========================================================================================================================
+3.What is your role? What do you do ?
+4.Why you use framework?
+5.Name activities during your sprint, please.
+6.Who test new features and how ?
+7.What the difference between inheritance and composition? Examples, please In the meaning of maintenance what is better composition or inheritance?
+8.What Design Patterns you use in Java?
+9.Tell me about the concept of test pyramid ?
+10.When do you execute your test cases?
+11.verification and validation How do you validate API.
+12.What type of bugs you can find with API testing.
+13.Are you doing cross browser testing(with cucumber)
+14.How are you running your test like nightly daily fortnightly If the test failed what do you do.
+15.What is singleton
+16.What is Garbage collector in Java
+17.What is casting
+18.How long was your project? How many regression test cases you have in your suite ?
+19.How do you automate database testing? How good are you with SQL?
+20.What difficulties do you face with automation in agile?
+
+
+
+

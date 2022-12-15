@@ -1,0 +1,322 @@
+
+
+ Q1: What is Selenium ?
+
+   A)
+   •It is an open source tool to automate UI.
+   •Selenium is a suite of software tools that is used to automate webBrowser.
+ --------------------------------------------------------------------------------------------------------------
+ ek Question: If test cases work on one browser well and don't work another browser what could be the issue ?
+
+  -this could be either;
+       -non-responsive web application
+       -lack of support of the design
+       - browser version.
+ --------------------------------------------------------------------------------------------------------------
+Q2: why do you prefer Selenium ?
+   1.Open Source
+   2.Supports Different Operation System
+   3.Supports various Browsers
+   4.Different Languages
+    --------------------------------------------------------------------------------------------------------------
+Q3: What are the scenarios that we can not do using selenium ?
+
+   1.Captchas
+   2.Windows based popups/alerts
+   3.Advertisements
+   4.Image validation
+   5.PDF validation
+--------------------------------------------------------------------------------------------------------------
+Q4: Other tools that you can use for automation ?
+   Cypress ,katlon studio,UFT/QTP
+--------------------------------------------------------------------------------------------------------------
+Q5.What is selenium IDE?---> (watch a short youtube video on Selenium IDE)
+   Selenium IDE Selenium IDE is an open source test automation tool that can record and
+     playback your actions on the web.
+
+ --------------------------------------------------------------------------------------------------------------
+Q6.What is selenium RC?
+   It is old version of WebDriver
+ --------------------------------------------------------------------------------------------------------------
+Q7.What is selenium WebDriver?
+   Selenium WebDriver is a browser web Framework that accepts commands and sends them to a browser.
+
+--------------------------------------------------------------------------------------------------------------
+ Q8.Selenium Grid?
+
+     ● It allows running test cases in parallel thereby saving test execution time.
+     ● It allows multi-browser testing
+     ● It allows us to execute test cases on multi-platform
+--------------------------------------------------------------------------------------------------------------
+ Q9)What is the advantage of selenium 4?
+     Advantage:
+      1) Usage Of WebDriver Manager: Selenium 4 come with the biggest advantage
+      with the use of WebDriver Manager, In the selenium 4 release there is no need to
+      download the latest executable for an individual browser, we can write a single line code
+      that can download the latest version for the specified driver.
+
+     ->WebDriverManager.chromedriver.setup();
+      2) Relative or Friendly Locator: There are different locators available to locate the
+      Web Element on the web, in addition, selenium 4 has come up with new relative locators
+      below are some:
+        ● toLeftOf(): Find the element to the left of a specified element.
+        ● toRightOf(): Find the element to the right of the specified element.
+        ● above(): Find the element above with respect to the specified element.
+        ● below(): Find the element below with respect to the specified element.
+        ● near(): Find the element is at most 50 pixels far away from the specified element. The pixel value can be modified.
+     3)Capture screenshots of a specific Web Element: In selenium 3 we can capture
+     screenshots of the entire page but with the help of selenium 4, we can capture
+     screenshots of a specific web element
+     4) Stability: With the help of Selenium 4 we can achieve stability.
+ --------------------------------------------------------------------------------------------------------------
+ Q10)What are the types of WebDriver APIs available in Selenium?
+    1.Chrome
+    2.Safari
+    3.Gecko
+    4.Opera
+    5.HTML Unit Driver
+--------------------------------------------------------------------------------------------------------------
+ Q11)what is HTML Unit Driver?
+      it is a headless browser.
+
+ ? Which one is the faster?
+     HTML unit Driver ---> because it has no ui , i.e it is headless
+--------------------------------------------------------------------------------------------------------------
+ Q13) what is Super interface of WebDriver?
+
+  •SearchContext is the super interface of WebDriver interface in Selenium WebDriver API.
+ --------------------------------------------------------------------------------------------------------------
+     driver.findelement() ; driver.FindElements();
+     -locate a single webElement and locate a series of webElements
+ --------------------------------------------------------------------------------------------------------------
+ Q14)What are the Locators available in Selenium? Which locator do you prefer?
+
+     There are eight locators in selenium to identify the webelements on the webpage : ID,
+     ClassName, Name, TagName, LinkText, PartialLinkText, XPath, CSS Selector.
+
+     preference: My preference is css it is faster.
+--------------------------------------------------------------------------------------------------------------
+ Q15)What is an XPath?
+      XPath is used to locate the elements. Using XPath, we could navigate through elements
+      and attributes in an XML document to locate web elements.
+--------------------------------------------------------------------------------------------------------------
+  Q16)What is the difference between Absolute xPath and Relative xPath?
+        Absolute Xpath starts with a '/' the top node and from there we can navigate the hierarchy to reach our desired.
+        html .
+        Relative Xpath: starts with a '//'' and allows us to directly access the html with the mention of specific attribute of that tag.
+ --------------------------------------------------------------------------------------------------------------
+ Q17) In which situations are you going to use Relative or absolute Xpath?
+         I always prefer to have relative xpath,but in a scenario where we can not use relative by any means then
+         we might use absolute.
+--------------------------------------------------------------------------------------------------------------
+
+ Q18)Write a complex xpath or css expression? Which one is better? What is the difference?
+     xpath:
+       "//label[@for='personal_txtLicExpDate']/following-sibling::img"
+       Hey get the tag  'label' which has attribute 'for' whose value is 'personal_txtLicExpDate' AND then get me
+       its following-sbling whose tag is img.
+
+     css:
+        "input[name^='pass']"
+     Difference between both Xpath and CSS:
+        ● Generally CSS is easy to use and readable over XPATH.
+        ● Xpath can work with text while CSS cannot
+        ●CSS has shortcuts
+ --------------------------------------------------------------------------------------------------------------
+ Q19)How to launch a browser using Selenium WebDriver? Explain the line of code
+    1.Set the System Properties
+       System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver.exe");
+    2.an instance of ChromeDriver, which will be driving our browser:
+       public static WebDriver driver = new ChromeDriver();
+    3.the website to which we want to navigate
+       driver.get("http://google.com");
+--------------------------------------------------------------------------------------------------------------
+ Q20)What is the alternative to driver.get()?
+    the alternate driver.navigate()
+ --------------------------------------------------------------------------------------------------------------
+ Q21) what are the difference between navigate and get difference in both?
+    Navigate allows you to move forward and backward which is the case with GET.
+    get will fully load the page whereas Navigate will not wait for the page to be fully loaded
+ --------------------------------------------------------------------------------------------------------------
+ Q22)What is the difference between driver.close() and driver.quit() methods?
+ Quit-->quit closes the webdriver isntance i.e all tabs/windows
+ Close--> close closes the current tab
+ ================+================+================+================+================+================+================+
+ Q23) How to get the text of a web element?
+ by using .getText()
+ ================+================+================+================+================+================+================+
+ Q24) How to get an attribute?
+ .getAttribute("attribute name")
+ ================+================+================+================+================+================+================+
+ Q25)What is the difference between driver.findElement() and driver.findElements()
+ commands?
+ findElment()-->returns a single element  --> return type : WebElement
+ findElements()-->returns a list of all the appropriate elements--> return type : list of WebElements
+================+================+================+================+================+================+================+
+ Q26)How do you work with radio buttons which do not have an id attribute?
+
+  *Use any other available locator (xpath,CSS)
+ ================+================+================+================+================+================+================+
+ Q27) How to select a value in a dropdown?
+ We can use Select class
+ 1.find the WebElement of the dropDown
+ WebElement dropDown=driver.findElement(By.id("designation"))
+ 2.Intitate the isntance of select classs and pass in parameter you WebElement
+ Select dropdown = new Select(dropDown );
+ 3.Select by following options
+ ● dropdown.selectByVisibleText("Value");
+ ● dropdown.selectByIndex(1);
+ ● dropdown.selectByValue("value");
+ ================+================+================+================+================+================+================+
+ Q28)How to check the multiple selected value in a dropdown?
+ isMultiple() Method  --> a boolean value
+ ================+================+================+================+================+================+================+
+ Q29)some dropdowns don't have the select tag what should use in that case ?
+ Write an appropraite xpath that can select all the values of the drop down and returns you the list of all of them
+ then u can loop throgh and make your desired selection
+================+================+================+================+================+================+================+
+ Q30)How do you handle an element in different windows?
+  we do getWindowHandles()  --> return: Set of Window Handles
+ 1.set
+ 2.Loop through the set
+ 3.Switch to this window handle
+ 4.Get the title and check if this is the desired one???
+ 5.if YES ,"break " if no continue to loop
+================+================+================+================+================+================+================+
+ Q31)How would you handle elements that are in a different frame?
+ driver.switchTo().frame("")
+================+================+================+================+================+================+================+
+ Q32) in how many ways you can siwtch to a frame?
+ By (Name/ ID), Index, WebElement
+================+================+================+================+================+================+================+
+ Q33)How can we handle web based pop-up?
+     using Alert Interface.
+     1.Simple alerts
+     2.Confirmations alerts
+     3.Prompt alerts
+================+================+================+================+================+================+================+
+ Q34) what alerts we can not handle using selenium?
+  Window based alerts.
+  ================+================+================+================+================+================+================+
+  Q35)What are the types of waits available in Selenium WebDriver?
+  we have three alerts:
+ 1.implicit
+ 2.Explicit
+ 3.Fluent
+================+================+================+================+================+================+================+
+ Q36)what is the purpose of Implicit:
+ Implicit wait is going to wait for a certain timeout until it throws a NoSuchElement Exception
+  (usually used to wait for elements to load in the DOM). polling frequency for implicit 500ms
+================+================+================+================+================+================+================+
+ Q37)Explicit Wait:
+ if you ever want to wait until a certain codniton like
+ elementis clickable
+ elementis visible
+ alert is present
+  then you use the Explicit wait
+  It works in a manner that it will wait for a certain amount of time until the conditionis met and then
+   it will throw an Exception in case of failure to meet the condition.
+================+================+================+================+================+================+================+
+ Q38)What is the differnece in fluent wait and Explicit/implicit wait?
+ In fluent waits we can set the polling frequency .  polling frequency is tuneable.
+ ================+================+================+================+================+================+================+
+ Q39)What is a flag?
+ A flag is just simply a boolean which you use for a loop to end (or it can be use in an if/ else statement)
+ e.g
+ boolean found=false;
+ while(!found){
+
+     if the value is found then
+           found==true
+ }
+================+================+================+================+================+================+================+
+ Q40) How to pause a test execution for 5 seconds at a specific point?
+ Thread.sleep(5000);   -->the exception that u have to add is either try catch or add exception to method signature
+ (Interrupted  exception)
+================+================+================+================+================+================+================+
+ Q41)right click ,Double click ?
+ Action class
+ actions you can perform using action class.
+ 1..scroll,drag and drop, move to a certain element e.t.c
+ ================+================+================+================+================+================+================+
+ Q42)What are the different exceptions you have faced in Selenium WebDriver?
+ ● ElementNotVisibleException
+ ● NoSuchElementException
+ ● NoSuchFrameException
+ ● NoAlertPresentException
+ ● NoSuchWindowException
+ ● StaleElementReferenceException
+ ================+================+================+================+================+================+================+
+Q43) the most difficult one is stale Element?
+ the element is no longer attached to the page
+ Usually when the page refreshes we see this exception.
+ the solution is to get that element again using driver.findElement (in most cases)
+ ================+================+================+================+================+================+================+
+ Q44) How can you find Broken Links/Images in a page using Selenium WebDriver
+  Broken links are links or URLs that are not reachable. They may be down or not
+  functioning due to some server error.
+ URL obj = new URL(linkURL);
+ HttpURLConnection conn = ((HttpURLConnection)
+ obj.openConnection());
+ int rCode = conn.getResponseCode();
+ if (rCode == 200) {
+ System.out.println( " Link is valid------" );
+ }
+  else {
+ System.out.println(i+ " Link is broken------" + linkURL);
+ }
+ }
+ }
+ ================+================+================+================+================+================+================+
+ Q45)Have you done any cross browser testing within your Project?
+     yes we have using chrome , firefox
+================+================+================+================+================+================+================+
+ Q46)How did u do this in your framework the cross browser testing?
+
+ In our property file we store keys for the browser and everytime we change the value of the key
+  execution will be happening on different browsers.
+================+================+================+================+================+================+================+
+ Q47)How to Upload a file in Selenium WebDriver?
+ we send the path of that particular file in sendKeys method()
+ uploadElement.sendKeys("C:\\newhtml.html");
+ ================+================+================+================+================+================+================+
+ Q48)What are the open-source Frameworks supported by Selenium WebDriver?
+ ●JUnit
+ ● TestNG
+ ● Cucumber
+ ================+================+================+================+================+================+================+
+ Q49) How To Login Into Any Site If It Is Showing Any Authentication Pop-Up for a
+ Username And Password?
+ To do this we pass username and password with the URL
+ http://username:password@url
+ e.g. http://myUserName:myPassword@gmail.com
+ ================+================+================+================+================+================+================+
+ Q50) What is the page object model ?  --> Important read more about it in detail on google.
+ Page Object model is a desgin pattern that help us write a reusable, maintainable ,reduced code
+ ================+================+================+================+================+================+================+
+ Q51)What is the difference between POM and Page Factory?
+ Pom--> design pattern
+ PageFactory -->is a class support POM.
+ Factory is one way of implementing Page Object Model which is inbuilt in selenium.
+ ================+================+================+================+================+================+================+
+ Q52). Suppose the developer changed the existing image to a new image with the same
+ xpath. Does the test case pass or fail?
+ A)Pass
+ ================+================+================+================+================+================+================+
+ Q53)Scenario: there is a submit button on the page it has id property. By using id we got
+ an element not found exception, how will you handle this situation? What might be
+ the problem in this case?
+ A.)change the click --> submit
+    use Xpath
+    check if it is in a frame
+    we can introduce some wait to see if DOM is taking time to load it
+
+
+
+
+
+
+
+
+
+

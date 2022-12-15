@@ -1,0 +1,140 @@
+
+1.How do you create a maven job in Jenkins?
+
+   -give the Name of the project
+   -Click on the Maven project.(if it is not visible simply install it )
+   -then click aply and save it
+================================================================================================
+2    How do you integrate Jenkins with Selenium?
+
+   -Go to Jenkins dashboard
+   -Click on manage Jenkins
+   -Click on configure Jenkins
+   -Click on JDK installation-In JDK name section enter the name, under Java Home section – give your java path
+
+================================================================================================
+3. Jenkins how can you get a failed build?
+
+  under Build History if the icon is in red color it  means it failed.
+  You can click and view the details of the failed build. See console logs to view
+  the details/reason of the failure.
+
+================================================================================================
+4. What is a freestyle job?
+
+  general purpose of job.
+  -Jenkins freestyle project allow users to automate simple jobs,such as running tests ,creating and packaging apps,
+  reports
+
+================================================================================================
+ 5. How do you configure a job to send mails when Jenkins job execution completes?
+
+   Inside your Jenkins project
+      Click Configure
+      Under Post-build Action
+      Select Email Notification and enter your Email Address
+================================================================================================
+6.What is jenkins ?
+ -Jenkins is an open source automation server that is help us in CI/CD
+================================================================================================
+7.How do u configure jenkins to run code from github on each new commit?
+  Add github link
+  Poll SCM
+================================================================================================
+
+8.Default port for jenkins?
+   8080
+================================================================================================
+9.What is a jenkins pipeline?
+   a pipeline is a workflow in which differnet jobs are chained together to execute one after another.
+================================================================================================
+10. How do u build a maven project in jenkins?
+    maven project
+    gihtub link
+    poll scm (if u want to)
+    pom.xml
+    set the goals (specify the runner class)
+================================================================================================
+11.how to configure mutliple runner class in jenkins?
+
+     use parametrization !!!!!
+
+================================================================================================
+12. How can you make sure that all team members are using the same selenium version?
+          We can use tools like Maven that give version and build
+          control for team perspective we have same version in pom.xml
+================================================================================================
+13.What is Maven?
+Maven is build automation tool that helps us to create project structure, manage dependencies and execute scripts
+================================================================================================
+
+14.What is POM.XML?
+   A file where we can add dependencies ,plugins.
+================================================================================================
+15.What is  maven repository?
+   a location on the internet where all the jars, dependecies are placed.
+   POm.xml file automatically downloads these jars/depencies without us having to worry about it.
+================================================================================================
+16.What is a dependency?
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>3.4.1</version>
+    </dependency>
+================================================================================================
+17.What are plugin in maven?
+    plugins for reports
+    plugins for execution of our code through command line (goals = name of your runner class)
+================================================================================================
+18.List out some Maven build phases?
+
+   ●validate − validate the project is correct and all necessary information is available.
+
+   ●compile − compile the source code of the project.
+
+   ●test − test the compiled source code using a suitable unit testing framework. These tests should not require the code be packaged or deployed.
+
+   ●package − take the compiled code and package it in its distributable format, such as a JAR.
+
+   ●integration-test − process and deploy the package if necessary into an environment where integration tests can be run.
+
+   ● verify − run any checks to verify the package is valid and meets quality criteria.
+
+   ● −install  install the package into the local repository, for use as a dependency in other projects locally.
+
+   ● deploy − done in an integration or release environment, copies the final package to the remote repository for sharing with other developers and projects.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+1What is maven ?
+
+ •Maven is a tool where we build our project structure and manage dependencies in pom xml.
+=======================================================================================================================
+2.What is the Maven Repository? What are their types?
+
+ •Local
+ •central (where we download all dependencies)
+ • Remote
+=======================================================================================================================
+3.What is dependency , how to handle dependencies in a framework ?
+
+ •Dependencies are just jar file.we add them in pom.xml
+ =======================================================================================================================
+ 4.How do you submit plugins in Maven? What are they? Version?
+
+  •Maven compiler plugin.
+  •Maven surefire plugin

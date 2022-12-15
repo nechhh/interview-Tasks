@@ -1,0 +1,11 @@
+1.Since selenium is an open source tool,there is no direct support.
+
+2.No facility deal with captcha,Bar code.
+
+3.Doesn't support any non web based application.
+
+4.You need third party tools for reporting.
+
+5.Difficult to indentify dynamic objects
+
+6.Dealing with pop-up windows.

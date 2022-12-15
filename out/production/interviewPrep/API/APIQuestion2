@@ -1,0 +1,204 @@
+1. What is API?
+ •API is communication between two or more layers(Presentation,App/bus layer,Database)
+ •it takes the request and bring the response.
+========================================================================================================================
+2. API vs Webservices?
+
+  •web services are API over internet all web services are API but we can't say reverse.
+========================================================================================================================
+2.1.How do you test API in your project?
+
+ I send a request and I verify the status code,and I check the response body as expected.
+
+
+========================================================================================================================
+
+3.What is SoapUI? and how did you use it in your current project?
+
+  •Actually I did not use it but I know what is it.
+  it is a protocol which is support only get and post operators.and it is slower and more secured than REST.
+  Also it is supported only xml format.
+========================================================================================================================
+4.Name of some commonly used HTTP methods in REST based architecture?
+
+ •Post->create a record
+ •Put -> update a record
+ •get -≥retrieve a record
+ •Delete -> delete a record
+========================================================================================================================
+ 5. HTML Status Codes ?
+ 1xx informational
+ 2xx success; (200 success,201 created,202 accepted,204 No content)
+ 3xx Redirection
+ 4xx client errors(400 bad wrong format,401 unauthorized,403 forbidden,404 Not found,405 Method not allowed)
+ 5xx server errors(500 Internal server Error,502 bad-Gateway,501 Not implemented,503 service Unavailable)
+========================================================================================================================
+6. What first thing you check when you get response?
+
+ • verify HTTP Status code.
+ •Verify the response payload.
+ •Verify response headers
+ •verify the performance
+
+========================================================================================================================
+8. What are Parameters in  api ?
+
+ •two type we have query parameter and path parameter.after endpoint we specify our request with parameters.(get firstname)
+========================================================================================================================
+9. What is Hamcrest Matcher for?
+
+  *Hamcrest Matcher is assertion library.
+ •Hamcrest is a framework for writing matcher objects allowing 'match' rules to be defined declarative.
+========================================================================================================================
+10. Rest Assured Log Logging Logs
+given().log().all().when().get(getUrl).then().log().all().statusCode(200);
+
+ In console it will print all information with resonse body such as;
+       •Request method:	GET
+       •Request URI:	http:gfjkdfgjf
+       •Request params:	<none>
+        Query params:	<none>
+        Headers:		Accept=*
+       •HTTP/1.1 200 OK
+       Response: 200
+       {
+           "status": "success",
+           "data": [
+               {
+                   "id": "1",
+                   "employee_name": "Tiger Nixon",
+                   "employee_salary": "320800",
+                   "employee_age": "61",
+                   "profile_image": ""
+               }]
+========================================================================================================================
+11. Serialization and Deserialization ?
+
+  •In rest assured we have Gson Library which is support the methods to convert object (to.Json /from.Json)
+  Serialization we convert Java Object   to API Json format, deserialization is reverse.
+========================================================================================================================
+12. What is EndPoint?
+
+ •an API endpoint is the point of entry in a communication channel when two systems are interacting.
+========================================================================================================================
+13.Authorization vs Authentication ?
+
+ •Authentication is check our identity and authorization is checks are we allowed.
+========================================================================================================================
+14.RESTful Web Service / API
+
+  •Restful is an architecture;it supports HTTP operations.
+  get, put, post,delete methods used to perform CRUD.
+========================================================================================================================
+16. How do you verify a value in your Response body?
+
+ • i use Matcher.equalto assertion or JUnit Assertions.
+========================================================================================================================
+17. Types of API’s Authentication ?
+
+  •HTTP Basic Authentication.
+  •API Key Authentication.
+  •OAuth Authentication.
+  •No Authentication.
+========================================================================================================================
+18.Difference between SOAP and RESTful web services?
+
+ •Both are web services.
+ •RESTful use JSON, XML, TEXT, whereas SOAP use only XML.
+ •REST is faster than SOAP based web services.SOAP is more secured.
+ •SOAP only support POST and GET,Whereas REST support CRUD operations.
+
+========================================================================================================================
+20. What is URI,purpose and format?
+
+  •The
+  • The purpose of URI is to locate a resource on the server.And provides a method for resources to be  accessed by other
+    systems.
+========================================================================================================================
+21. What WebServices do you use in your project ?
+
+  •I use Restful which is supported HTTP method.we are able to conduct CRUD operations.
+========================================================================================================================
+22. What is XML?
+
+ •It is form of Excel used by API for communication between 2 layers.
+========================================================================================================================
+23. What is JSON?
+
+   •It is a JavaScript Object.It used to transform data between two or more layers.alternative to XML.
+========================================================================================================================
+24. Do you know swagger ?What is swagger ?
+
+   •swagger include information to perform API testing.
+   •Swagger is an open-source.
+========================================================================================================================
+25. json vs gson ?
+
+  •Json is a format,Gson is a library.
+  •Json has key and value format.
+  •GSon is a process of converting.
+  •from java to json(serialization),from json to java(deserialization).
+========================================================================================================================
+26.Do you use any non-web services API?
+  •I use Selenium API for browser,JDBC for database,Rest Assured for API.
+========================================================================================================================
+28. Do you have API documentation website for your API?
+
+  •yes,We use Swagger documentation
+========================================================================================================================
+29.How do you test Rest API ?
+
+ •I send HTTP method requests and verify response status code and response body, header.
+========================================================================================================================
+32. How do you manually test your API?
+
+  •I use Postman,I send request and I verify status code and response body we can test there.
+========================================================================================================================
+33.What are the types of Request in Rest API?
+
+  •There are Get, Post, Put, and Delete requests.
+========================================================================================================================
+ 34.What are headers in REST API?
+   •They represent the meta-data associated with API request and response.
+   •In the headers we specify the type of request and body as Json format.
+========================================================================================================================
+35.What is Rest Assured Library?
+
+ •It is used to automate API,it follows BDD  approach.Simply we prepare request,we send request and we assert it.
+========================================================================================================================
+37.What is backend API;
+
+  •Where our code and logic is written.
+========================================================================================================================
+38.What are HTTP Request and HTTP Response?
+
+ Request;
+   •Method(post,put,etc)
+   •UrI(url+endpoint)
+   •Request Header(content-type app/json)
+   •Request Body (data to send)
+ Response;
+    •Response status code.(200,301,400,500)
+    •Response Header;Content-Type,Date, Server, Last-Modified
+    •Response Body; Data comes from server.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

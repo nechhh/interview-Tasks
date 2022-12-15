@@ -1,0 +1,155 @@
+1.What is Software Testing ?
+
+ •It is a process to finding bugs/defect in a software product.Also we can say validating/verifying a software product.
+ =======================================================================================================================
+ 2. What is Requirement ?
+
+  •It is the description of the features and functionalities of the target system.
+  •getting the software requirements from client and analyze and document them.
+========================================================================================================================
+ 3.What is the Software Requirements Specification (SRS) ?
+
+  •SRS is detailed document about the software product with functional and non-functional requirements.
+  •SRS has all necessary information about project.
+========================================================================================================================
+
+ •Requirement analysis.
+ •Design
+ •Develop
+ •Testing
+ •Maintenance
+========================================================================================================================
+4.What is the Software Testing Life Cycle (STLC)?
+
+ *STLC defines the phases in testing of software or application.
+
+  •1. Requirement / Design Analysis
+  •2. Test Planning
+  •3. Test Case Development (Designing)
+  •4. Test Environment Setup
+  •5. Test Execution
+  6. Test Closure Activity (Reporting)
+========================================================================================================================
+5.When Should The Testing Start ?
+
+ •We have to make sure the requirement is correct in the first place. With the wrong requirement it
+  is impossible to build a bug free application.
+========================================================================================================================
+6.Black Box Testing (Behavioral Testing) ?White Box Testing ?
+
+ •Black box is Testing the functionality and white box is  testing the codes.
+ •Testers care just the functionalities works or not. don't know logic and internal structure.
+ •In white box; internal logic and structure   known by testers. they test the codes.
+========================================================================================================================
+7.Ad-Hoc Testing (Random, Monkey)
+
+  •It is a testing without any plan and documentation.
+  •This method mostly used during the UAT.
+
+========================================================================================================================
+ 8.What is Verification and Validation ?
+
+ •Verification;It happens by devs. and testers to evaluating software during development phase.
+ •Validation; In the end of the development process to check whether it meets the customers requirements.
+========================================================================================================================
+STLC;
+  • Requirements/User story analysis;This phase helps to identify the scope of the testing.
+  • Test Plan Creation(What,How,Who,When)
+  • Test Case Creation.(TestCaseID, StepNumber, Description of the functionality, Expected result, Actual Result).
+  • Environment Set up.(Dev,test,staging,Production)
+  •test execution (Defect Life Cycle)
+  •Test Cycle Closure(Defect Report,Test Report,Team )
+========================================================================================================================
+1.What is Software Testing?
+
+ •It is a process to identify the bug/defect on an software product.
+ •Main goal make sure product as possible as bug free delivered to customer.
+========================================================================================================================
+2.What is a Test Scenario ?
+
+ •In user story possible area to be tested.Answer for "What to test"
+========================================================================================================================
+3.What is a defect and its life cycle ?
+
+ When actual result is not as expected result.
+ (DLC);
+
+   •Testers find a bug(status=new)
+   •devs work on (status=In progress)
+   •Code Fixed(status=fixed)
+   •Testers retest the code(Test pass/no)(status closed/re-open)
+========================================================================================================================
+4. Severity and priority ?
+
+ •Severity; defines the impact of defect on the application.(Critical, Major, Medium, Minor)
+ •Priority;How fast does it have to be fixed (high,medium,low)
+========================================================================================================================
+What do you do when you find a defect ?
+ •Re-test 3-5 times.
+ •I said my colleague to test for make sure it is not caused my machine.
+ •Then i take ss or screen's record.
+ •then I log a defect on JIRA assign the developer.
+========================================================================================================================
+What will you do when the script fails?
+
+ •First of all, I will identify the failure.
+ •Let’s say, if it is due to synchronization issues, I will add extra time by using implicit, explicit or some custom expected conditions.
+ •If it is a script issue, I will start debugging (identify) my script and fix it, analyze the exceptions but if it
+  is a real defect then I will log the defect.
+
+========================================================================================================================
+What is the difference between debugging and testing ?
+
+ •The main difference between them debugging is conducted by developer They also fixes errors during the debugging phase.
+ •Testing on the other hands, finds the errors rather than fixes them.When tester finds a bug,they report it.
+========================================================================================================================
+What do you know about “Planning Poker” technique ?
+
+ •Planning poker, also known as Scrum Poker,is a card based agile technique that is used for planing and estimation.
+ In our product refinement meeting;PO makes User Stories ready.
+
+ •Each estimator has a deck of poker cards with the values such as ,1,2,3,5,8,13
+ •
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+ What kinds of bugs that API testing would often find?
+
+•Missing or duplicate functionality
+Fails to handle error conditions gracefully(not giving the proper response,or status code)
+Stress
+Reliability(if i hit N number of times it is not giving right response)
+Security
+Not implemented errors
+Inconsistent error handling(one time you getting one error msg another time other error msg)
+Performance
+Multi-threading issues
+Improper errors
+========================================================================================================================
+-Customer complaint;I activated a policy with State Farm, after having them for about a month I was dropped with NO WARNING.
+ This caused a lapse in my coverage and my Car Loan is now charging me for this lapse that I was ill informed about.
+
+BUG:
+  When a customer claims an accident there are some questions(Report a claim->Accident->) then chose accident type is
+  parking;The system try to learn more about accident.There are question depends on each other. the options are ready
+  for customer to chose.
+

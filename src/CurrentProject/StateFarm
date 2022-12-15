@@ -1,0 +1,102 @@
+Company Name: State Farm
+
+Headquarters;Bloomington, Illinois, United States
+Founder;
+Services;Banking, Insurance, Investing
+CEO;Michael L. Tipsord	2015–present
+Version 9.30.1
+
+
+(Do not say about app module and futures naveen)
+
+State Farm is an insurance company that gives different various digital  banking, Investing and insurance services to their customers.
+ My team is called pine-pod we are full-stack development team, And we are taking care of car insurance policy holder
+ platform and we are creating backend and front end service.
+
+ The pages we are working on them are , Manage Policy Page, Billing Information Page, Report a claim(glass only,Roadside assistance,
+ Accident/Collision,weather Incident,Animal Incident, Unoccupied Vehicle Incident ,stolen or vandalized vehicle).
+
+ The APIs I am working on them are init-home(GET Call => Vehicle, policy number, client name, billing information)
+
+
+RealApps; Click report a claim ->type of indicates->glass only(date/location)->current/other  vehicle options(click current)->
+          What glass part damaged(clicked driver side)->which glass on the driverSide( clicked backDoorWindow)then a claim number is appears in
+          dashboard you can check that in database
+
+ Bugs
+ ->claim number was appears in frontend but it wan't stored in database
+
+ -> API I was able to create for new glass claim before it repaired.
+
+ -> UI When I was clicking Manage Policy button it was going to blank page.
+ REAL TIME USERS
+ -Jeanine    •   155 days ago  #+ 0 -
+ - Website and app worked fine until we started a claim. Unable to sign on since. 403 forbidden errors.
+  -Website and app are having login issues. Awesome….considering I was on the side of the road trying to get assistance.
+  -Trying to make a payment over the phone and card will not process due to technical difficulties.
+
+
+
+The modules we are currently working on are, Incomplete workflow, Name changes, Add Beneficiary, View Summary,
+View Policy Summary, Update Beneficiary, Create Policy with SQL query, insert pieces of information into the database,
+ and validate with APIs call, and View Details.
+=======================================================================================================================
+TIPS TO TEST INSURANCE DOMAIN APPLICATION
+
+•Risk management plays a key role in the success of any insurance company.
+ 1)Role management
+ 2)Information Interface;While you testing an insurance application, you need to verify if the information is
+    updated correctly through the frond end as well as stored successfully in the back-end system or database.Also,the
+    saved information is fetched without any error on the front end of the database.
+ 3)Number Factor:
+   Insurance is a number game and many entities in the insurance domain are sensitive to these numbers.
+   A small change in the premium may cause a big difference in the end result.So check all the decimal points and
+   appropriate mathematical calculations are important in insurance application testing.
+ 4)Date Factor;
+    DAtes are as well very much crucial in the insurance application.
+    effective date.
+ * tips to be considered when testing an application.
+
+   •Quote get generated and costumer accepts those quotes.
+   •Policy Number is generated with an appropriate plan in it.
+   •All personal details and policy details are updated in the Policy Admin System.
+   •Member and their dependencies are enrolled under the respective policy.
+   •An appropriate commission is generated in the system.
+   •Brokers must be able to view their customer's information through the front end app.
+   •Customers must be able to view and modify their details through the online portal.
+
+
+
+=======================================================================================================================
+How to Explain current Project
+
+1.Name of the project and your Domain.
+2.Brief Introduction(Purpose)
+3.Tools,Technologies,Platform,Process,Type of architecture and client.
+4.Your role (Learning ,challenges, contributions, and interesting facts).
+=======================================================================================================================
+Type of insurance;
+a.Commercial Auto Insurance; it is protects a company's vehicles.You can protect vehicles that carry employees, products
+or equipment,With commercial auto insurance you can insure your work vehicles.
+b.Personal Automobile Insurance;Automobile insurance covers all road vehicles(trucks,cars,motorcycles,etc.)Auto
+insurance has a dual function,protecting against both physical damage and bodily injury resulting from a crash,and also
+any liability that might rise from the collision.
+========================================================================================================================
+What are our major goals;
+
+  •Costumer satisfactions.
+  •Reduce the amount of cost.
+
+========================================================================================================================
+Functionalities are listed below;
+
+ •Policy workflows or policy Life Cycle
+ •Financial and non-financial transactions
+ •Document management and processing
+ •Coverage change
+ •premium due date alert
+ •Cancellation,renewals of policies.
+ •Modification of customer personal details
+ Policy lapse processing.
+
+

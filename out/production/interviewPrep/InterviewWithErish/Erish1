@@ -1,0 +1,91 @@
+-Tell me about yourself?
+2-Can you explain your framework? How do you execute test cases? What reporting do you use?
+3-Are you following TestNG or JUnit?
+4-In cucumber I have scenario with 10 steps and lets say step #5 I want to execute 5 times. How can I do it?
+Scenario outline
+5-Let's say we have 1 page and in that drop down we have some values. How can I get all those values?
+             //Getting selected dropdown value
+            String defoultOption = select.getfirstSelectedOption().getText();
+            System.out.println("The defoult option is: " + defaultOption);
+
+             //Getting all options of the dropdown
+            List<WebElement> allOption = select.getOption();
+            for (WebElement element : allOption) {
+            System.out.println(element.getText());}
+
+            //Select by visible text
+            select.selectByVisibleText("Price(low to high");
+
+            //select by value
+            slect.selectByValue("hilo");
+
+            //select by index
+           select.selectByIndex(1);
+
+
+6-Did you work on different browsers? Which ones?
+7-Let's say on IE as soon as I open I get a pop-up where it is asking me username and password how can you automate that?
+//http://username:password@test.com
+driver.get(“//http://admin:admin@amazon.com”)
+String pageMessage=driver.finfElement(By.cssSelector(“xyz”)).getText();
+System.out.println(pageMessage);
+
+
+
+
+
+
+
+
+8-I have a web page where I have thousands of hyperlink, how can I automate and verify that there is no dead links?
+//links---//a hrefhttp://www.google.com>
+//images--//img hrefhttp://www.tes.com>
+
+First of all we will check links and images if there is any of them are break
+
+//1.get the list off all links and images
+
+List<WebElement> linklist=driver.findElements(By.tagName(“a”));
+Linklist.addAll(driver.findElements(By.tagName(“img”)));
+System.out.println(“size of full link and image-”+linklist.size());
+
+
+List<WebElement> activeLinks= new Arraylist<WebElement>();
+
+//2. Iterate(yinelemek) linklist : exclude(haric tutma) all the links/images- doesn’t have any href attribute
+For(int i=0; i<linklist; i++){
+    If(linklist.get(i).getAttribute(“href”)!=null&&(linklist.get(i).getAttribute(“href”)).
+contains(“javascript”))){
+   activeLinks.add(linklist.get(i));
+}
+}
+//get the size of active link list
+System.out.println(“size of active link and image-”+activelinks.size());
+
+//3. Check the href url, with httpconnection api:
+//200—ok
+//404—not found
+//500—internal error
+//400—bad request
+For(int j=0; j<activeLinks.size(); j++){
+  HttpURLConnectionconnection=(HttpURLConnection)new URL(activeLinks.get(j).getAttribute(“href”)).openConnection();
+connection.connect();
+connection.getResponseMessage();
+connection.disconnect();
+System.out.println(activelinks.get(i).getAttribute(“href”+”---”+ response));
+
+}
+
+
+
+
+
+9-Let's say I have a page and on that page a have an HTML web table that has 4 columns and twenty rows. And in the last
+ rows, do I have to validate data in the last rows?
+
+https://github.com/naveenanimation20/July2021SeleniumSessions/blob/309055511c9714c30e0b5d43deed84d3fd015442/src/main/j
+ava/SeleniumSessions/WebTableRowCol.java
+
+10-Let's say I have google app and in a Cucumber file I have 20 scenarios and there is 2 steps that are all common for
+all scenarios. How I achieve that without repeating the code?
+I will use Backround key word !!!!!

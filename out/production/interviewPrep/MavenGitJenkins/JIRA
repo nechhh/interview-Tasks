@@ -1,0 +1,90 @@
+1.What is Jira ?
+
+ •jira is a project management tool and also track defects.
+=======================================================================================================================
+2.For bug tracking what tools do you use ?
+
+  • I use Jira,I create I defect which type of "Bug".
+   Then Report;
+    •Defect ID
+    • Bug description
+    • Environment Info.
+    • Screenshot
+    • Severity
+    • Assign to Dev.
+=======================================================================================================================
+3. What is Active Sprint Board?
+
+   •Workflow: To Do>> in progress(can have block here too) >> Review(Lead review the code before moving to done)>>Done
+   •Blocked:Go to story and click on options and click on more options> blocked
+     •Write a comment about why it is blocked.
+     •SME will have to deal with ASAP.
+     •Nothing should be in the block for more than a day
+     •Once it's fixed you can change to blocker resolved.
+=======================================================================================================================
+4. What are the Jira terms?
+
+ •issue;Work you need to do and fix.
+ types of issue
+   •Story
+   •Task
+   •Bug
+   •Epic
+=======================================================================================================================
+5.What's the difference epic and tickets?
+
+ •Epic is a series of tickets which can't be fixed in one sprint.
+ •Epic is written by BA and Tickets written by testers
+=======================================================================================================================
+6. How do you automate User Stories from JIRA?
+
+ •Look at description -Agile story
+ •Create future file and save as JiraStory.feature
+ •Add scenario located in Acceptance criteria
+ •Run cukesRunner dryRun=true
+ •Implement methods
+ •But first we always should do manual test.
+=======================================================================================================================
+7.How you integrate Selenium with Jira ?
+
+  •Selenium does not have a build for integration with Jira.
+  •But with some plugin we can do that such as Xray and Zephyr.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+
+
+
+1. Given Geico Login Page When User enter valid username and password Then should verify Hello, "ClientName"
+2. Given Geico Login Page When User enter valid username and password Then should verify Hello, "ClientName"
+3. Given Geico Dashboard Page When User try click Manage Policy Then Verify it is clickable.
+
+4. Given BillingMethod Page When User add new payment method Then Should Verify Confirmation Number save into Database
+
+
+API
+
+-- init-home endpoint
+1. Given init-home endpoint When Call the API Then Verify Response Code is 200. // health check
+2. Given init-home endpoint When Call the API Then Verify Response time is under 800 ms. // performance
+3. Given init-home endpoint When Call the API Then Verify Vehicle Information in Response body equal Dashboard Vehicle Information. // functional test
+
+--

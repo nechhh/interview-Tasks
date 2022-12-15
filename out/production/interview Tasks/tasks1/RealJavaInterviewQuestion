@@ -1,0 +1,4 @@
+
+1) What is Diference Between form and page factory ?
+-So form it is an approach for design patterns as you mentioned rightly
+- Page factory is a class that is provided by selenium web driver

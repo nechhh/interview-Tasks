@@ -1,0 +1,8 @@
+
+-ITestListener has following methods
+  •onStart; OnStart method is called when any Test starts.
+  •onTestSuccess- onTestSuccess method is called on the success of any Test.
+  •onTestFailure- onTestFailure method is called on the failure of any Test.
+  •onTestSkipped- onTestSkipped method is called on skipped of any Test.
+  •onTestFailedButWithinSuccessPercentage- method is called each time Test fails but is within success percentage.
+  •onFinish- onFinish method is called after all Tests are executed.

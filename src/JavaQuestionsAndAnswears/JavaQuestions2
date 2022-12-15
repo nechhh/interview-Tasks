@@ -1,0 +1,287 @@
+Q1.Which class is the superclass of all classes?
+
+ -java.lang.Object is the root class for all the java classes, and we don’t need to extend it.
+==============================================================================================================
+ 2. What is the method?
+
+  -Method is set of code which is referred to by name and can be called at any point of program.
+==============================================================================================================
+3.What is the constructor ?
+ •A constructor is a special method to initialize objects.it is called when an Object of class is created.
+==============================================================================================================
+4.Diff between method and constructor
+  -Method can be any name whereas constructor must be same as Class name.
+  -Method can have return type whereas constructor can't.
+  -constructor called automatically but we must  call method implicitly.
+==============================================================================================================
+5.What is the difference between local and instance variable.
+
+ - Local is created in a block of code whereas instance created out of a block of code but inside a class.
+ -we can not access local variable out of the blocks whereas we can access instance inside blocks and out of blocks.
+==============================================================================================================
+6.Object Oriented Programming
+
+  -OOP mainly focuses on the object that are required to be manipulated instead of logic.
+    - 4 pilars of OOP'S Encapsulation, Abstraction,Inheritance, Polymorphism
+==============================================================================================================
+7.What is encapsulation and how did you use it?
+
+ encapsulation is hiding the data and providing the use it by getter and setter methods.
+==============================================================================================================
+8. What is the concept of Abstraction?
+  -It is hiding the implementation and detail of codes from user and provide only the functionality.
+  We declare abstract keyword to class and method head.
+  -They don't have a body in Parent class.
+==============================================================================================================
+9.Difference between Abstract Class and Interface?
+
+ -interface are implicitly abstract and cannot have implementations.
+ -abstract class It can have abstract and non--abstract methods.
+ -We use abstract  and extend keywords for  abstract.  and interface and implement keywords for interface.
+ -We can not create an object for both of them.
+==============================================================================================================
+10. What is Polymorphism?
+
+   -by Polymorphism; one object can have different forms.
+   -There is two types;
+       -Run time
+       -Compile time
+       -Polymorphism is implemented using the concept of Method overloading and method overriding.
+
+ ==============================================================================================================
+11.What is Inheritance ?
+
+  -nheritance IS-A relationship which is also known as a parent-child relationship.
+  -When you inherit from an existing class, you can reuse methods and fields of the parent class.
+  -Moreover, you can add new methods and fields in your current class also.
+  -Code reuse is the most important benefit of inheritance
+==============================================================================================================
+12.. Difference between Polymorphism and Inheritance ?
+
+  -Inheritance is used to define the relationship between two classes.Child inherits Parents qualities, methods and codes.'
+  -Polymorphism is an ability of object to behave in multiple form.
+      • Dynamic Polymorphism->  Overriding
+      • Static Polymorphism -> Overloading
+==============================================================================================================
+13. Difference between method Overloading and method Overriding?
+
+  -In Overloading method name must be the same, but the parameters must be different.
+  -In overriding , method name and parameters must be same.
+  -We can achieve overloading in the same class.But overloading occurs when we have inheritance relationship.
+  -We cannot override static, final and private method in Java. but we can overload static, final and private method in Java.
+==============================================================================================================
+14.What is immutable ?
+
+   -Immutable means that once the constructor for an object has completed execution that instance can't be altered.
+   -This is useful as it means you can pass references to the object around, without worrying that someone else is going to
+    change its contents.
+==============================================================================================================
+15. What is static binding vs dynamic/runtime binding?
+
+  -Static binding is overloading, and dynamic binding is method overloading
+==============================================================================================================
+16.What is Access modifier and what are the different access modifiers?
+
+  -Java provides access modifiers to set access levels for classes, variables, methods, and constructors.
+     -Default;Visible to the package
+     -Private;Visible to the class only.
+     -public;Visible to world.
+     Protected;Visible to the package and subclasses.
+
+     -Diff between default and protected;
+       default only acces in package,but protected outside the package thought child classes.
+==============================================================================================================
+17.Difference between Set,List and Map in Java?
+
+  -List order is maintained,Set order is not maintained.
+  -List allow duplicates,Set doesn't allow duplicate.
+  Map Provides key and value,key can't be duplicate whereas value can be duplicate
+========================================================================================================================
+18.When to use List, Set and Map?
+
+   -When we store data and we want to access them we prefer the list.
+   -If we want to store and maintain an order,we prefer list.
+   -if we don't want to duplicate we  prefer Set(HashSet)
+   -If we want to store data if form of key and value Map is preferred.
+========================================================================================================================
+19.What is  Array ?
+
+  -It is a container object that holds a fixed number of values.
+  -The size of array established then it's created.
+  -Each element is accessed by its numerical index.
+========================================================================================================================
+20.How do you find if ArrayList contains duplicates or not  ?
+
+ -Boolean isDup=list.size !=list.stream().distinct().count();//return true or false
+========================================================================================================================
+21.Difference between Arrays and ArrayList in Java?
+
+  -Array size is fixed when created.arrayList is resizable.
+  -We use list.length for array and we use list.size for arraylist.
+========================================================================================================================
+22.What is thread safe or Synchronized? (thread=is parcacigi,isi parcalara bolme gibi bisey)
+
+-Thread safety is very important, and it is the process to make our program safe to use in multi-threaded environment,
+-there are different ways through which we can make our program thread safe
+  • Synchronization is the easiest and most widely used tool for thread safety.
+  • JVM guarantees that synchronized code will be executed by only one thread at a time.
+  • We can use synchronized keyword in two ways, one is to make a complete method synchronized and other way is to
+  create synchronized block.
+
+========================================================================================================================
+23. How do you sort an object that you created?
+
+  -if it is an array we can use Arrays.sort method,we can put aur object in a treeMap or treeMap.
+  Alo COMPARATOR interface can be used for sorting.
+========================================================================================================================
+24.Difference between Hashtable and HashMap in Java?
+
+ •HashTable is synchronized but hasMap is not.
+ *HashTable doesn't allow any null key or value whereas  hashMap allow one key and multiple values.
+ •HashMap is not thread-safe whereas hashTable is.
+========================================================================================================================
+25.How would you handle Exception ?
+
+MINE;
+ -I will handle with try and catch blocks.to convert complex run time errors to user friendly errors.
+EXPECTED;
+ -use try-catch-finally approach ...
+========================================================================================================================
+26.TreeSet vs TreeMap;
+ MINE;
+    -Both does not allow duplicates.
+    -Insertion order is maintained.
+    -TreMap is form of key and value.
+ EXPECTED
+ •TreeSet: Can contain only unique values - is sorted in ascending order
+ •TreeMap: can contain only unique keys. - keys are sorted in ascending order
+
+ YOU SHOULD ADD;
+  *sorted in ascending order
+========================================================================================================================
+27.final vs finalize vs finally
+  MINE;
+    -we use final if we don't want to someone override our code.or if we don't someone inherit our class
+    -finally;we used with try and catch blocks it executes our finally code anyway.
+    finalize; don't remember
+  EXPECTED;
+    •Final Class CAN'T be Inherited,final Method CAN'T be Overridden,final Variable CAN'T be changed.
+    •finally  is a block and used to place important code, it will be executed whether exception handled or not
+    •finalize is a method and used to perform clean-up processing before Object is Garbage collected.
+  YOU SHOULD ADD;
+    •finalize clean-up processing before object is garbage collected.
+
+========================================================================================================================
+28.Difference between Error and Exception in Java?
+
+ MINE;
+  •Exceptions are error messages and Error is what we did wrong ?
+ ACTUAL;
+ •Error represent errors which are generally cannot be handled.
+ •On the other hand, Exception represent errors which can be catch and dealt.
+ •All the Errors are Exceptions, but the reverse is not true.
+ •n general Errors are which nobody can control or guess when it happened, on the other hand Exception can be guessed
+  and can be handled.
+========================================================================================================================
+29.Difference between Runtime Exception and Checked Exception in Java?
+
+ MINE;
+   yok
+ EXPECTED;
+   •Main diff. between them;it is mandatory to provide try-catch to hande checkedException while in case RuntimeException
+   in not mandatory.
+========================================================================================================================
+30.Difference between throw and throws in Java?
+ •trow keyword is used to throw an exception explicitly,throws used to declare an exception it mean it works similiar
+  to the try-catch block.
+========================================================================================================================
+31.What is Iterator and difference between for each loop?
+
+ •Iterator works with ArrayList.
+ •you can make changes like remove item  while iterating,whereas we can not with for each loop.
+========================================================================================================================
+32.Java Collection Framework ?
+
+ •java.util.Collection - interface from Set and List extend (not implement)
+     •Set;DOES NOT ALLOW DUPLICATES
+         •HashSet;use when you don't want to duplicate and don't care about order.
+         •LinkedHashSet;use when you care about iteration order.
+         •TreeSet;Elements will be ascending order.
+     •List:cares about the index.
+         •LinkedList;Iterates more slowly than ArrayList but fast insertion and deletion.
+
+     •Vector;Same as ArrayList but Vector is thread-safe.
+     •ArrayList: Fast iteration and Fast random access.
+
+ •java.util.Collections - a class that holds static utility methods for use with collections; Includes add, remove, contains,
+  size, and iterator, etc.
+
+     •Map;It is an object that maps keys to values.it can not contain duplicate keys.
+       •Hashtable;it si synchronized and it does not allow null keys.
+       •LinkedHashMap;order is maintained.
+       •HashMap;it is not synchronized,allow one key and multiple value.
+       •SortedMap;Treemap;
+       Set,List,and Map can NEVER be both sorted but unordered.
+========================================================================================================================
+How do you use an abstract class in your project give me an example?
+
+ •since we used POM in our framework.We created an abstract class named BasePage to have all common members for every
+  page example getPageTitle().Then each page class(HomePage,LoginPage,DashboardPage etc) inherit from these class.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

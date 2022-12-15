@@ -1,0 +1,37 @@
+1.What is Jenkins;
+
+  •Jenkins is a CI/CD tool,It is used to automate process, such as build,test,deploy.
+========================================================================================================================
+2.What is Jenkins job?
+
+  •A job is a runnable task that jenkins controls to achieve a required objective.
+========================================================================================================================
+3. What is continuous Integration?
+  •Devs integrates their codes several times  a day.
+========================================================================================================================
+4. What is continuous deployment?
+
+ •Codes changes are automatically built,tested, deployed and prepared for release.
+========================================================================================================================
+5.Do you maintain Jenkins?
+
+  •No it's done by DevOps Team.
+  •Tester provide them information of tests and configuration and also emails to send notifications.
+      •Mvn path
+      •Mvn code;goals-compile,or verify druner=xml,etc.
+      •Time schedule for certain tests
+========================================================================================================================
+6.Who sets up Jenkins?
+
+  •In my company we have DevOps/Operations Support team who is responsible for maintaining jenkins.
+========================================================================================================================
+7. Who sets up Smoke Tests in Jenkins?
+
+  •testers works with DevOps.
+========================================================================================================================
+8.How your smoke tests are configured on jenkins ?
+
+ •Our jenkins job is configured to get my automated tests from GitHub and run every day using Maven.
+ •test -Dcucumber.options="--tags @smoke"
+========================================================================================================================
+9.

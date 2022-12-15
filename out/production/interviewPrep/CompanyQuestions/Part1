@@ -1,0 +1,147 @@
+Q1.what is json and jsonpath?
+  -json is  an alternative to XML(it used primarily to transmit data  between a server and web app)
+  -JSONPath is a query language for JSON, similar to XPath for XML
+
+  - JSON (JavaScript Object Notation) It is used to transmit the data between a server and a web application
+  It gives us the data in Key-Value pair.
+  - JSON Path , It is a class that we can use its methods to get a valur from a Json Object. We need json-path
+  dependency. Which is inckuded in lates version of RestAssured.
+============================================================================================
+Q2.What are api automation steps ?
+  -Understand the requirement read the swager docs.
+  -Prepare the request
+  -send the request to the server
+  -Validate the Response as expected.
+============================================================================================================
+Q3.post and put differences ?
+
+  -post create a record,put update a record.
+  -if we call put multiple it will always produce same result.but calling post multiple times,
+  it will create same resource multiple times.
+
+============================================================================================================
+Q4.what is gson and explain?
+
+  -Gson is an open-source project
+  -Gson is a java library which can convert Java Object to Json and Json object to Java Object.
+============================================================================================================
+Q5.how do you do data transferring in api?
+
+  -thing about data security.
+  -thing about size of data
+  -how long it is gonna take
+  -have a connectivity between enterprise and the cloud.
+   ============================================================================================================
+Q6.what is 402 and 403 in api?
+
+    -402; Payment Required,content is not available until the client makes a payment
+    -403 response code means that a client is not allow  accessing URL.
+============================================================================================================
+Q7.what is Enum in java?
+
+  -An enum is a special "class" that represents a group of constants.
+  -To create an enum, use the enum keyword (instead of class or interface)
+  -enum Level {
+       LOW,
+       MEDIUM,
+       HIGH
+       }
+       Level myVar = Level.MEDIUM;
+============================================================================================================
+Q8.what is action and keys in selenium?
+   -Press Enter/Return Key in Selenium.It is the same action with clicking enter.
+   -by creating an action object we can perform some mouse actions such as drag and drop,move elements,double click.
+============================================================================================================
+Q9.wait types in selenium and what is the differences?
+
+  -Implicit wait;
+             We set a certain amount of time  a before it throws a “No Such Element Exception”.
+  -Explicit wait;
+             Its tell the driver to wait for a certain condition before throwing “ElementNotVisibleException”
+  -fluent wait
+            It used to define maximum time for  driver to wait for a condition and set the frequency.
+============================================================================================================
+Q10.I need you to go webpage and click on link that will open a new link I need
+you to switch that window and refresh that child window and switch back to
+main window how?
+
+  -first get current window handle with /  get.windowhandle();
+  -then get all windows handle with /  get.windowhandles();
+  switch to child window with /   driver.switchTo
+  then refresh the page   with /driver.navigate().refresh();
+  then switch back to main page
+
+ ============================================================================================================
+Q11.frames in selenium?
+
+  we can switch to frame by index number,frameName or webelement and do the required actions and switch back to default.
+=================================================================================================================
+Q12.what is abstract class?
+
+ -abstractions is a aproach to providing only the necessary detail and hiding the all implementation detail.
+ -it reduces the code complexity
+ -use abstract keyword for create class and use in method header and don't provide body inside parent class.
+ -from child extend that class and implement the method.
+=================================================================================================================
+Q13.what is overriding?
+
+  mine own:
+    overriding is a process when we change  the method parameters we can have different  method with same name.
+=================================================================================================================
+Q14.open your terminal write me a code to reverse the string
+    collections in java?
+
+  List<String> myList=new ArrayList<>();
+        myList.add("zaloma");
+        myList.add("Na");
+        myList.add("Erish");
+        System.out.println(myList);
+
+        Collections.reverse(myList);
+        System.out.println("gerćek olan = "+myList)
+
+        output:
+        [zaloma, Na, Erish]
+        gerćek olan = [Erish, Na, zaloma]
+
+=================================================================================================================
+CI/CD
+
+  Continues Integration and Continues Delivery
+
+   Dev   |   Test   |  Deploy
+
+   -CI is a proces where the team members integrate their code or their work in a shared repository. it can be daily
+   -CD after CI if they do deployment to another environment and running test make
+    sure it is ready for release we call this process CD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

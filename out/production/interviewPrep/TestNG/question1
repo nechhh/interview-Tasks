@@ -1,0 +1,106 @@
+1.What is the TestNG framework? What is the advantage we get using the TestNG
+  framework? Difference between TestNG and Junit? What annotations are there in
+  TestNG that are not in Junit?
+
+ • TestNG is a testing framework designed to simplify a broad range of testing needs, from unit testing to integration testing.
+ • TestNG gives lots of annotations which makes the test case creation easy.
+ • Using TestNG, priorities of the tests and Grouping is possible using TestNG
+ • TestNG generates HTML reports (Selenium Webdriver cannot generate the test
+     reports alone, TestNG helps SW to achieve this).
+========================================================================================================================
+2.TestNG vs Junit:
+   ● TestNG supports testing in groups but it is not supported in JUnit.
+   ● TestNG compare to Junit provides additional annotations such as:
+     ○ @BeforeSuite
+     ○ @BeforeTest
+     ○ @BeforeGroups
+     ○ @AfterGroups
+     ○ @Aftertest
+     ○ @AfterSuite
+========================================================================================================================
+3. Explain TestNG annotations? What annotations u have worked on? What is the difference between before method and before test?
+
+   @BeforeSuite                                       @AfterSuite
+       @BeforeTest                               @AfterTest
+           @BeforeClass                     @AfterClass
+                  @ BeforeMethod        @AfterMethod
+                                 @Test
+ @BeforeMethod: The method annotated with @BeforeMethod annotation will be executed before each test method.
+ @BeforeTest: The method annotated with @BeforeTest annotation will be executed before any test method belonging to the
+  classes inside the “test” tag is run.
+========================================================================================================================
+4. What is a suite file? What is the importance of testng.xml file? How to create and
+run testng.xml ?
+
+ •In TestNG we use testng.xml file to configure the complete test suite in a single file.
+
+ Importance of testng.xml file:
+    ● Allows to include or exclude the execution of test methods and test groups.
+    ● Allows to add group dependencies.
+    ● Allows to add priorities to the test cases.
+    ● Allows to configure parallel execution of test cases.
+
+ Create and Run TestNG.xml file:
+   Click on runner class
+========================================================================================================================
+5. How can we create a data driven framework using TestNG? What will be the logic
+   behind fetching data from a data provider and inserting it on UI?
+
+   •Data-driven concept is achieved by @DataProvider annotation
+   •The @Test method that wants to receive data from this DataProvider needs to use a dataProvider
+    name equals the name of this annotation.
+
+   @Test(dataProvider="getData")
+   public void test1(String UID, String PWD) {
+       System.out.println("testing using "+ UID+" and "+PWD);
+   }
+     @DataProvider
+     public String[][] getData() {
+     String[][] data = {
+
+                  { "Admin", "Hum@nhrm123" },
+                  { "Syntax", "Syntax123!" },
+                  { "SyntaxUser", "Syntax123!" }
+                 };
+          return data;
+   }
+========================================================================================================================
+7. What is a TestNG Listener? How did you use it? How to get a screenshot on failure?
+
+ •TestNG listener is mainly used for generate the report for the test.
+ •Using ITestListener interface and method onTestFailure we can take ss.Also we have more method such as,onTestSkipped,onTestSuccess,etc.
+========================================================================================================================
+8. What are the different ways to produce reports for TestNG results?
+
+  •Detailed Report
+  •Summary Report-
+  •Listener-
+  •ExtendReports
+========================================================================================================================
+9. How do you run multiple TestNG Suite Files?
+
+  •We have to configure our testng.xml file.
+           <?xml version="1.0" encoding="UTF-8"?>
+           <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+           <suite name="MultipleSuite">
+           <suite-files>
+           <suite-file path="regression.xml"></suite-file>
+           <suite-file path="smoke.xml"></suite-file>
+           <suite-file path="sanity.xml"></suite-file>
+           </suite-files>
+           </suite>
+========================================================================================================================
+10. How to run test cases in parallel using TestNG?
+
+ •We use "parallel" attribute in testNG.xml to accomplish parallel test execution.
+
+   •tests – All the test cases inside <test> tag of testng.xml file will run parallel.
+   •classes – All the test cases inside a java class will run parallel.
+   •methods – All the methods with @Test annotation will execute parallel.
+
+
+
+
+
+
+

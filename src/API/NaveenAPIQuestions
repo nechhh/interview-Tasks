@@ -1,0 +1,317 @@
+0.What are major challenges faced in API testing?
+If you can overcome the challenges in API Testing, you can be confident in the API testing interview too. They are:
+
+Parameter Selection
+Parameter Combination
+Call sequencing
+Output verification and validation
+Another important challenge is providing input values, which is very difficult as GUI is not available in this case.
+===============================+===============================+===============================+===============================+
+Q1.What is an API ?
+
+  -API is a software intermediary that enables two application to communicate with each other.
+===============================+===============================+===============================+===============================+
+Q2.What are main differences between API and Web Service ?
+
+  -All Web services are API but not all APIs are Web services.  API may be exposed to in multiple ways.
+  -Three style of uses  Web service; SOAP,REST and XML-RPC for communication whereas API may be exposed to in multiple ways.
+
+===============================+===============================+===============================+===============================+
+Q3.What are the limit of API Usage ?
+
+ -Many APIs have a certain limit set up by the provider.Let's say if I relly want to access some data of any specific company.
+  let's say 60 or 100 APIs per minute you can call.So they will restrict you or you have to pay for it.
+===============================+===============================+===============================+===============================+
+Q4.What are some architectural styles for creating a Web API ?
+
+ •HTTP for client-server communication.
+ •XML/JSON as formation language.
+ •Simple URI as the address for the services.
+ •Stateless communication.
+
+===============================+===============================+===============================+===============================+
+Q5.Who can use a Web API ?
+
+   -Web API can be consumed by any client which support HTTP verbs such as GET,PUT,DELETE,POST.
+    so they can be easily used by any client.
+===============================+===============================+===============================+===============================+
+Q6.What is API testing ?
+
+   API testing is a type of software testing that analyzes an application program interface (API) to verify it fulfills
+   its expected functionality, security, performance and reliability
+===============================+===============================+===============================+===============================+
+Q7.What are the advantages of API testing ?
+
+  •Major advantage of API testing provides access to application without UI.
+   It's Include less code,so it  takes less time then GUI.
+  •It helps testers to recognize the errors early,instead of becoming larger issues during GUI testing.
+  •Language Independent:APi uses xml/Json language.So the user can pick and programing language and done testing.
+  •Easy Integration with GUI:
+====================================================================================================================================
+Q8.Some Common protocol used in API testing ?
+
+ -Many protocol are available to be used in API testing;such as JMS,REST,HTTP,UDDI and SOAP.
+====================================================================================================================================
+Q9.What is the test environment of API ?
+
+ -It is requires the configuration of the database and server,depending on the software requirements.
+====================================================================================================================================
+Q10.What are principles of an API test design ?
+
+  •Prepare the request
+  •Execution
+  •Get response
+  •Validate
+  •Reporting
+====================================================================================================================================
+Q11.What are the common API testing types ?
+
+   •Validation Testing
+   •Functional Testing;whatever you expect from this api is correct or not
+   •UI Testing
+   •Load Testing
+   •Runtime/Error detection ;you will get 4xx errors
+   •Security Testing
+   •Penetration Testing
+   •Fuzz Testing
+   •Interoperability and WS Compliance testing
+====================================================================================================================================
+Q12.What is the procedure to perform API testing ?
+
+  •Send the request with necessary input data.
+  •Get the response having output data.
+  •Verify that the response returned as expected in the request.
+
+   •Protocols used in API testing are: HTTP(Get,Post,Put,Patch,Delete). REST. SOAP.
+   •HTTP is a contract, a communication protocol and REST is a concept.
+
+
+========================================================================================================================
+13.What must be checked when performing API Testing ?
+
+ •are you getting right data or not
+ •Schema validation;for exaple if your  values in response come with wrong form(forex;id come with "334" )
+ •HTTP status code
+ •Data type,validation,order and completeness
+ •Authorization checks(username and password)
+ •Implementation of response timeout(time you get the result.it will be same in ui)
+ •Error codes in case API returns
+ •Non-Functional testing like performance and security testing.
+========================================================================================================================
+14. What is the best approach method to perform API testing ?
+
+ The following factors should be considered when performing API testing:
+
+ Defining the correct input parameters(query,path)
+ Verifying the calls of the mixture of two or more added value parameters(forex mac price is 20,it should give you that)
+ Defining the basic functionality and scope of the API program
+ Writing appropriate API test cases and making use of testing techniques such as equivalence class, boundary value, etc. to check the operability
+ Testing case execution
+ Comparing the test result with the expected result
+ Verifying the API behavior under conditions such as connection to files and so on.
+========================================================================================================================
+15. What are tools could be used for API testing?
+ A few of common tools are Katalon Studio, Postman,
+ SoapUi Pro, Apigee, etc.  While doing Unit and API testing, both targets source code. If an API method uses
+ code based in .NET then another supporting tool must have .NET.
+========================================================================================================================
+17. What are differences between API Testing and UI Testing ?
+
+API enables communication between two separate software systems. A software system implementing an API
+ contains functions or subroutines that can be executed by another software system.
+
+On the other hand, UI ( User Interface) testing refers to testing graphical interface such as how users
+interact with the applications, testing application elements like fonts, images, layouts etc. UI testing
+ basically focuses on look and feel of an application.
+========================================================================================================================
+19. What are the testing methods that come under API testing?
+One of the most common Web API testing interview questions is about the testing
+methods. They are:
+
+•Unit testing and Functional testing
+•Load testing to test the performance under load
+•Discovery testing to list, create and delete the number of calls documented in API
+•Usability and Reliability testing to get consistent results
+•Security and Penetration testing to validate all types of authentication(no one can hit your API with authentication)
+•Automation testing to create and run scripts that require regular API calls
+•End to end Integration and Web UI testing(if your web work with 3th party make sure they work well together)
+•API documentation testing to determine its efficiency and effectiveness(make sure every thing is written properly on swagger)
+========================================================================================================================
+20. Why is API testing considered as the most suitable form for Automation testing?
+API testing is now preferred over GUI testing and is considered as most suitable because:
+
+It verifies all the functional paths of the system under test very effectively.
+It provides the most stable interface.
+It is easier to maintain and provides fast feedback.
+========================================================================================================================
+21. What are common API errors that often founded?
+
+•Missing module errors.
+•Documentation errors.
+•Parameter validation errors.
+•And some standard error expectations as if the result is not so predicted then the occurrence of errors can be seen and
+for the same warnings are specified in the form of a message. There can be one or more warnings within an individual module.
+========================================================================================================================
+22. What kinds of bugs that API testing would often find?
+
+•Missing or duplicate functionality
+Fails to handle error conditions gracefully
+Stress
+Reliability
+Security
+Unused flags
+Not implemented errors
+Inconsistent error handling
+Performance
+Multi-threading issues
+Improper errors
+========================================================================================================================
+23. What is API documentation?
+The API documentation is a complete, accurate technical writing giving instructions on how to effectively use and integrate
+ with an API. It is a compact reference manual that has all the information needed to work with the API, and helps you
+  answer all the API testing questions with details on functions, classes, return types, arguments, and also examples and tutorials.
+========================================================================================================================
+24. What are API documentation templates that are commonly used?
+
+Swagger
+Web service API specification
+========================================================================================================================
+25. When writing API document, what must be considered?
+Source of the content(design document,acceptance criteria)
+Document plan or sketch
+Information needed for every function in the document
+Automatic document creation programs
+========================================================================================================================
+26. How often are the APIs changed and, more importantly, deprecated?
+APIs, especially modern RESTful APIs, are a nice creation that can certainly simplify and accelerate integration efforts,
+ which makes it more likely you will benefit from them. But APIs can and do change for various reasons, sometimes abruptly,
+  and hence REST APIs do not differ from traditional integration methods in this respect. If an API call is obsolete and
+   disappears, your procedure will interrupt and it is important to understand how often the APIs you depend on change or are deprecated.
+
+========================================================================================================================
+27. What is REST?
+
+REST (Representational State Transfer) is an architectural style for developing web services. which
+ of HTTP protocol and uses HTTP method to define actions.
+In REST architecture, a REST Server provides access to resources and REST client accesses and makes these resources available.
+ Here, each resource is identified by URIs or global IDs, and REST uses multiple ways to represent a resource, such as
+  text, JSON, and XML. XML and JSON are nowadays the most popular representations of resources.
+========================================================================================================================
+
+28. What is a RESTFul Web Services?
+ •REST is an architectural style to design web services.It means when a RESTful API is called,the server will transfer
+ to the client a requested resource.
+
+ A RESTful web service usually defines a URI, Uniform Resource Identifier a
+ service, provides resource representation like JSON and a set of HTTP methods.
+========================================================================================================================
+29. What is a “Resource” in REST?
+
+ which can be either text files, HTML pages, images, videos or dynamic business information.
+REST Server gives access to resources and modifies them, where each resource is identified by URIs/ global IDs.
+========================================================================================================================
+30. What is the most popular way to represent a resource in REST?
+
+REST uses different representations to define a resource like text, JSON, and XML.
+XML and JSON are the most popular representations of resources.
+========================================================================================================================
+31. Which protocol is used by RESTful Web services?
+RESTful web services use the HTTP protocol as a medium of communication between the client and the server.
+========================================================================================================================
+32. What are some key characteristics of REST?
+
+•REST is stateless, therefore the SERVER has no maintain the user contexts.
+• Web service uses POST method primarily to perform operations, while REST uses GET for accessing resources.
+========================================================================================================================
+34. What are the core components of an HTTP request?
+An HTTP request contains five key elements:
+
+1.An action showing HTTP methods like GET, PUT, POST, DELETE.
+
+2.Uniform Resource Identifier (URI), which is the identifier for the resource on the server.
+
+3.HTTP Version, which indicates HTTP version, for example-HTTP v1.1.
+
+4.Request Header, which carries metadata (as key-value pairs) for the HTTP Request message. Metadata could be a client (or browser) type,
+ format supported by the client, format of a message body format, cache settings, and so on.
+
+5.Request Body, which indicates the message content or resource representation.
+========================================================================================================================
+35. What are the most commonly used HTTP methods supported by REST?
+
+GET is only used to request data from a specified resource. GET requests should never be used when
+ dealing with sensitive data.
+
+POST is used to send data to a server to create/update a resource. POST requests are never
+cached and bookmarked and do not remain in the browser history.
+
+PUT ;update resources.
+
+DELETE removes the specified resource.
+
+OPTIONS is used to describe the communication options for the target resource.
+
+HEAD asks for a response identical to that of a GET request, but without the response body.
+
+========================================================================================================================
+
+36. Can GET request to be used instead of PUT to create a resource?
+The PUT or POST method should be used to create a resource. GET is only used to request data from a specified resource.
+========================================================================================================================
+37. Is there any difference between PUT and POST operations?
+
+•PUT and POST operation are quite similar, except the terms of the result generated by them.
+
+PUT operation is idempotent, so you can cache the response while the responses to POST operation are not cacheable, and
+ if you retry the request N times, you will end up having N resources with N different URIs created on server.
+GET /device-management/devices : Get all devices
+POST /device-management/devices : Create a new device
+
+GET /device-management/devices/{id} : Get the device information identified by “id”
+PUT /device-management/devices/{id} : Update the device information identified by “id”
+DELETE /device-management/devices/{id} : Delete device by “id”
+========================================================================================================================
+38. Which purpose does the OPTIONS method serve for the RESTful Web services?
+
+ The OPTIONS Method lists down all the operations of a web service supports. It creates read-only requests to the server.
+========================================================================================================================
+39. What is URI? What is the main purpose of REST-based web services and what is its format?
+
+•URI stands for Uniform Resource Identifier. It is a string of characters designed for unambiguous identification
+of resources and extensibility via the URI scheme.
+
+The purpose of a URI is to locate a resource(s) on the server hosting of the web service.
+
+A URI’s format is <protocol>://<service-name>/<ResourceType>/<ResourceID>.
+========================================================================================================================
+40. What is payload in RESTFul Web services?
+The “payload” is the data you are interested in transporting. This is differentiated from the things that wrap the
+data for transport like the HTTP/S Request/Response headers, authentication, etc.
+========================================================================================================================
+41. What is the upper limit for a payload to pass in the POST method?
+<GET> appends data to the service URL. But, its size shouldn’t exceed the maximum URL length. However, <POST> doesn’t have any such limit.
+
+========================================================================================================================
+42. What is the caching mechanism?
+Caching is just the practice of storing data in temporarily and retrieving data from a high-performance store
+(usually memory) either explicitly or implicitly.
+
+When a caching mechanism is in place, it helps improve delivery speed by storing a copy of the asset you requested
+ and later accessing the cached copy instead of the original.
+
+========================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

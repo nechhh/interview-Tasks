@@ -1,0 +1,3 @@
+we were create environment for each pull request.When I run first test case it failed.The headless mode was on(true)
+Then I set to false and I run test case on browser,And I was not able to login the application.when I check the console
+I realize that it is a CORS issue

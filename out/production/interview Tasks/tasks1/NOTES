@@ -1,0 +1,134 @@
+1. What types of variables we have in Java. Define all of them and explain the differences
+
+-A variable is a container which holds the value while program is executed.
+-It is a name of memory location.
+
+a) LOCAL VARIABLE :
+- local variable  declared inside the body of the method.we can use this variable just inside the body.
+-local variable cannot be defined with "static"keyword.
+
+b) INSTANCE VARIABLE:
+-instance Variable:Declare inside the class but outside the body of the method.
+- it is not declared as static.
+
+C)STATIC VARIABLE:
+- It can not be local.
+-You can create a single copy of the static variable and share among all the instances of the class.
+-Memory allocation for static variables happens only once when the class is loaded int the memory.
+========================================================================================================================================
+
+2. What is the constructor? Use of a constructor in the class? Difference between constructor and a method? Can we overload a constructor?
+
+-What is the constructor:
+-It must created as class name
+-It is a special method that is used to initialize object.
+-we can call it by  created a object.
+                                                        public static void main(String[] args){
+         Use of a constructor in the class:
+                                                        class Asghar{
+                                                           String name;
+                                                           int num;
+
+                                                           Asghar(String name,int num){
+                                                           this.name=name;
+                                                           this.name=num;
+                                                           System.out.println(name+num)
+                                                          }
+                                                         }
+                                                        }
+Difference between constructor and a method:
+  -Constructor are invoked implicitly but methods are invoked explicitly.
+  -Constructor does not return any value,the method may/may not return a value.
+  -Constructor must be same name as that of class,method may have any name.
+
+Can we overload a constructor:
+-Constructor can be overloaded,with same name but different parameters types or with different no of parameters.
+============================================================================================================================================
+
+
+3. What is the usage of super and this? Super vs this? Super() vs super.? this() vs this.
+
+this keyword:
+    We can use the "this" keyword to access the instance variables when you have same name variables in your
+    method or constructor or any block of code.
+what is super keyword:
+    super keyword in java is used to refer to the parent class object.
+
+What is the usage of super and this:
+-this keyword represents the current instance of a class.and the constructor of the same class.
+-super keyword represents the current instance of a parent class.and the constructor of the parent class.
+
+super:it can used to call parent class variables and methods.
+super():it can be used only called constructor.
+
+this(): it can be used to call constructor
+ this.:it can be used to call current object.
+============================================================================================================================================
+
+4. What is Inheritance? Benefits? Types? Explain each type
+-it is one of the main four pillars of OOPS.
+-we crate  a new class from an existing class.
+-the new class is known as subclass,child or derived class.
+-the existing class is known as superclass,parent or base class.
+
+Benefits:
+   we can use methods and constructors in a class and call them from another class.
+  -It's reduce the amount of code that we have to write.
+  -it is more efficient.
+  -our codes more clear.
+  -Saves memory.
+
+
+ Types of inheritance
+      1) Single Inheritance:
+             a derived class is created from a single base class.
+      2) multilevel Inheritance:
+             a derived class is created from another derived class.
+      3) hierarchical Inheritance.
+             in this inheritance,more than one derived class is created from a single base class and further child
+             classes act as parent classes for more than one child class.
+      4) multiple Inheritance:
+              a derived class is created from more than one base class.
+      5) Hybrid Inheritance:
+           This is a combination of more than one inheritance.
+
+
+============================================================================================================================================
+5. What is Overloading? How can it be achieved? What can we overload and what we cannot?
+What is Overloading
+    with the help of method overloading we can have many methods with same name but
+    different parameters in a class.
+How can it be achieved
+    we can overload a method by changing three things
+        1) Number of parameters
+        2) change the data type of parameters
+        3) we can change the sequence of parameters.
+What can we overload and what we cannot
+       -we can overload methods and constructors
+       -we can not overload static methods by removing static keyword.
+
+========================================================================================================================================
+
+6. What is Overriding? How can it be achieved? What can we override and what we cannot?
+
+what is MethodOverriding:
+    Happens when same method exists inside the parent class and the child class.
+How can it be achieved:
+    when we inherit from a class we just need to rewrite that method inside the
+        child class. all should be same except the body and access modifiers.
+What can we override and what we cannot
+   Methods Can be Override:
+        -Public
+        -Protected
+        -default
+   Methods Can not be Override:
+        -private
+        -Final
+        -Static
+=====================================================================================================================
+
+
+
+7. What is Polymorphism? Types of Polymorphism? Differences between Overloading & Overriding?
+8. What is the final keyword,usage and purpose?
+9. What is Abstraction? How can we achieve an Abstraction in Java? What is Interface? What is Abstract Class? Interface vs Abstract Class?

@@ -1,0 +1,45 @@
+1.How can we achieve parallel testing on testing, walk me through it? (exact xml syntax not just the concept)
+
+   •
+   •
+   •
+   •
+=============+=============+=============+=============+=============+=============+=============+=============+========
+How can we perform parallel testing on cucumber?(exact syntax)
+
+ •Cucumber can be executed in parallel using JUnit and Maven test execution plugins.
+ •In JUnit the feature files are run in parallel rather than scenarios, which means all the scenarios in a
+  feature file will be executed by the same thread.
+ • You can use Maven Surefire.
+
+=============+=============+=============+=============+=============+=============+=============+=============+========
+What method of ITlisteners we use to get the time of the report ?
+
+=============+=============+=============+=============+=============+=============+=============+=============+========
+How can we have a test run 3 times and then report it using it listeners ?
+
+=============+=============+=============+=============+=============+=============+=============+=============+========
+Tell me how u write rest assured code to automate a get call with an endpoint?
+
+•prepare request(header)
+•then paste Endpoint in get(request.when().get(APIConstants.GET_ONE_EMPLOYEE_URI))
+•assertThat.statusCode
+
+=============+=============+=============+=============+=============+=============+=============+=============+========
+How do u use excel file to extract data (use technical words) ?
+
+=============+=============+=============+=============+=============+=============+=============+=============+========
+What is the use of Apache poi, how we use Apache poi with excel file ?
+
+=============+=============+=============+=============+=============+=============+=============+=============+========
+Lets say u get hired and u start working on a project that the framework is 5 -10 years old , how u proceed on writing your test cases ?
+
+=============+=============+=============+=============+=============+=============+=============+=============+========
+On production phase how can u test a function ?
+
+=============+=============+=============+=============+=============+=============+=============+=============+========
+How will u report to your lead when asked how much of your work have u completed on %? Tell me exactly how u will calculate it?
+Asked to Code Rest Assured report generation
+How do you test on production?
+How u use waits and why , why not use thread.sleep?
+How u handle multiple windows what is their return type whats the purpose of using that method? (edited)

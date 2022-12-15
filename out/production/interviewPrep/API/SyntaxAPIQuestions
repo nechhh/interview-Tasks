@@ -1,0 +1,234 @@
+   API INTERVIEW BATCH13
+********************************
+Q1. What are APIS?
+     -API is an Application Programming interface that  communication
+      method between different layers of the application
+
+     i.e front end , application Layer, Database.
+========================+========================+========================+========================+========================+
+Q2.What is a WebService?
+     -Apis available on the internet are called WebServices.
+========================+========================+========================+========================+========================+
+Q3.What type of WebServices do u know about?
+     REST--> XML,txt,Json, less secured then SOAP , easier and faster
+     SOAP-->XML, more secured, time consuming and slower
+       -Soap is a protocol
+       -Soap uses XML for communication and only supports POST and GET calls.
+       -Rest is an architecture
+       -Rest uses HTTP request to GET,PUT,PATCH,POST and DELETE data.
+
+
+========================+========================+========================+========================+========================+
+Q4.What are the most common HTTP methods supported by REST application?
+
+     Post--> Create a resource (Body, Headers (Content-type (json/xml) Authorization --if needed--),Uri)
+     Get--> retrieve a resource (Headers,parameters(if nedeed path/query parameters))
+     PUT  --> update a resource
+     Delete--> delete a resource
+     Patch--> update partially
+========================+========================+========================+========================+========================+
+Q5.What are the status code you know about?
+   1xx → Informational
+   2xx → Success (request was accepted successfully) (200→ Ok, 201→ Created, 202→
+        Accepted, 204→ No Content)
+   3xx → Redirection
+   4xx → Client Error (400-Bad Request, 401-Unauthorized, 403-Forbidden, 404-Not
+        Found, 405-Method not Allowed)
+   5xx → Server Error (500-Internal server Error, 501-Not implemented, 502-Bad
+        Gateway, 503-Service Unavailable
+========================+========================+========================+========================+========================+
+Q6.What is API testing?
+Testing that the API is responding as expected i.e ( for a specific end point the results are what we expect)
+
+Is a type of testing which determines if the developed APIs meet expectations regarding
+functionality, reliability, performance and security of the application. We really test to
+verify that we get what is expected. We will have to verify a few areas of the response
+body and also status codes.
+========================+========================+========================+========================+========================+
+Q7.What are advantages of API testing?
+-->Test for core functionality
+-->Time effective(if devs work on frontEnd we still can work on API)
+-->language independent
+========================+========================+========================+========================+========================+
+Q8.How do u test API in your prev/current job?(important)
+     -Refer to the API documentation
+     -read the documentation to understand the workflow of the application.
+     -I try to figure out if any information is missing from documentation in order to test it properly
+     -execute each request using postman and make sure that all the endpoint are working fine and returning me the response.
+     -basic testing on postman in which i use global and environment variables to make the flow automated as much as possible.
+     -Then we move to automation using Rest Assured
+     -We implemented Cucumber framework for the automation
+     -I used jsonPath or Gson library to get the data out of the response to make assertions using Junit.
+========================+========================+========================+========================+========================+
+Q9.What is an endPoint?
+        End point is the location of your resource.
+========================+========================+========================+========================+========================+
+Q10.do u have any api documentation website for your apis.?
+        yes we have swagger documentation for our apis.
+========================+========================+========================+========================+========================+
+Q11. what is swagger?
+   Swagger is an open-source  tool that helps developers design, build, document, and consume RESTful Web services
+========================+========================+========================+========================+========================+
+Q12.What information do u expect in a response?
+   1.response status code
+   2.response body
+   3.response headers
+========================+========================+========================+========================+========================+
+Q13. What is Json?
+   Json is a format that is used to transfer information between different applications.
+   it has:
+   a key and value
+========================+========================+========================+========================+========================+
+Q14.What are two types of Parameters sent with a URI?
+   Path parameter
+   Query parameter
+========================+========================+========================+========================+========================+
+Q15. what type of information do u have in Headers?
+  The basic information about the request that we are sending
+  --> content type of the application
+  --> what is the authorization key for this request
+  --> the conneciton should it be kept alive?
+========================+========================+========================+========================+========================+
+Q16.What is a payload?
+   Requests and response bodies of every HTTP message includes request data called Payload.
+========================+========================+========================+========================+========================+
+Q17.How do you verify a value in your Response body?
+   when we have the response from the server
+     1.get the required value out of json response body
+     2.is to make assertion that value is what we expect it to be (junit/restAssured)
+========================+========================+========================+========================+========================+
+Q18.In order to extract data from json body, what is your approach( bhow do u do it / which library u use for it)?
+  in order to extract data from the response i use JsonPath .
+========================+========================+========================+========================+========================+
+Q19.What is serialization and Deserialization?
+  Serialization is ---> conversion of json Object to a string
+  Deserialization--> conversion of a string to a Json Object
+========================+========================+========================+========================+========================+
+Q20.In Json Path how do u pass the response?
+    In form of a string.
+ ========================+========================+========================+========================+========================+
+Q21.What would you do if you do not have URI or anything else provided but you have
+to do API testing?
+                        ASK FOR IT
+ ========================+========================+========================+========================+========================+
+Q22.Which data do you compare your API responses with?
+   api documentations  /dataBase.
+========================+========================+========================+========================+========================+
+Q23.How did you write a feature file in your cucumber project for API testing?
+in our project we had  a call to generate token in background because that token was being used by all the requests
+and we had a separate class that had its implementation.
+    Given- preparing a request file
+    When - calling the API/endpoint
+    Then - performing assertions
+ ========================+========================+========================+========================+========================+
+Q24.service has different and dynamic responses based on what combination of 3
+    optional fields are sent in a request it receives, how do you structure testing this service?
+
+========================+========================+========================+========================+========================+
+Q25.What baseline metrics/requirements are necessary for starting to prepare a
+        performance/load test profile for a service that has had no previous
+        performance/load testing performed? (important)
+        Not done it.
+    Watch a video on youtube for load testing and its requriements   and the tools used for it.
+ ========================+========================+========================+========================+========================+
+Q26.You just mentioned SoapUI in your last answer, have you worked with SoapUI?
+A.No I have not, but I was very curious to learn how I would be able to use other
+  technologies to test API’s so I did some research on the side.
+========================+========================+========================+========================+========================+
+Q27.What does 401 status code mean? 301?
+401-->- Unauthorized - meaning we need a token or key to authenticate ourselves and hit the API successfully
+301-->Moved Permanently(the thing you try to reach it was there but it moved another url)
+ ========================+========================+========================+========================+========================+
+Q28.What is a WSDL and a WADL file?(deal with later )
+WSDL - Web Service Description Language
+   purpose:is an XML document that describes SOAP-based web services.We can load a WSDL file into
+   our API tool and know exactly,which methods it can call,what arguments those methods expect, and which data types they return.
+WADL - Web Application Description Language
+   purpose:is an XML document that is used to describe RESTful web services. Just like a WSDL
+ ========================+========================+========================+========================+========================+
+Q29.What are some principles of an API test design?
+SettingUp, Execution, verifications, reporting.
+A.Setting up - Setting up your test environment, think of how we set everything up with a
+postman. Global, environment variables, JWT generation, etc
+Execution - How did we execute our test cases in postman? Did we have a flow?
+Verification - what and how did we verify?
+Reporting - How did we generate our collection runner or cucumber report?
+Clean up - How did we unset variables in postman
+========================+========================+========================+========================+========================+
+Q30.How did you generate your token or key without having to manually do so all the
+time?
+postman--> extract the token value
+       ---> save in globals
+       ---> use in all request from the global variables
+restAssured---> in background
+           ---> separate class implementation
+========================+========================+========================+========================+========================+
+Q31.What is stateful and stateless application?
+
+ Statefull application:
+ server has a memory in which it saves session id
+ not possible to scale horizontally
+ Stateless application:
+ server returns a token that is saved in DB
+ It is possible to scale these applications horizontally
+ slower then stateful application
+ ========================+========================+========================+========================+========================+
+Q32. What is a pm object?
+pm is the post man object that helps u write test case , get repsonse from the post man, set global variable,
+get global variablkes e.t.c
+also assertion using pm.expect()
+========================+========================+========================+========================+========================+
+Q33.What are the details bearer token contains?
+A.header
+  payload
+  signature
+========================+========================+========================+========================+========================+
+Q34.What is restAssured?
+Rest Assured (JAVA based Library) is being used for Restful API’s.
+It follows the BDD approach where given is used for preparing
+the request
+========================+========================+========================+========================+========================+
+Q35.. What are Presentation, Application and Data layers?
+Presentation layer-->UI
+Application layer-->logic /code
+DataLayer--> Data Base
+========================+========================+========================+========================+========================+
+Q36.What is Authentication and Authorization?
+Authentication--> you are the right user.
+authorization--> who are you and do you have the permission.
+========================+========================+========================+========================+========================+
+Q37.What is Resource in REST?
+text files, HTML pages,images, videos
+ it can be a simple json Object
+ it can be a json object with in a json object
+ it can be a jason array
+ Examples:
+        1.{
+            "key":"value"
+        }
+        2.{
+            "key":{"key":"value"}
+        }
+        3.{
+            "key":[{"key":"value"}]
+        }
+4.{
+
+   "key":{
+            "key":[
+                    {"keyx":"value1"},
+                    {"keyy":"value2"}
+                  ]
+        }
+  }
+========================+========================+========================+========================+========================+
+Q38.Happy scenarios about API, unhappy scenarios about API?
+happy scenarios--> positive scenarios
+Negative scenarios--> unhappy scenarios
+Q39.what is gson and explain?
+Gson is a Java library that can be used to convert Java Objects into their JSON
+representation
+n. It can also be used to convert a JSON string to an equivalent Java object
+used for serialization and deserialization --> if u use this be prepared for the next question what is serialization..
+
+                                THe end

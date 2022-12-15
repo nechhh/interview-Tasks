@@ -1,0 +1,104 @@
+1.What are the differences between soap and rest ?
+
+ •SOAP is a protocol,REST is an architectural.
+ •SOAP uses only XML for exchanging information,whereas REST uses XML, JSON, Plain-text. Moreover.
+========================================================================================================================
+2.What is your favorite testing tool and why?
+
+ •I like both postman and selenium. Postman is very fast to record an resource in database and also selenium is a
+  very great tool to automate UI.
+========================================================================================================================
+3.types of web services.
+
+ •There are 2 types I know;
+ SOAP defines standard communication protocol(set of rules) XML message exchange.
+ REST(stateless); rest does not has UI,user need an unique URI for access.support HTTP methods.
+
+========================================================================================================================
+4.test plan and when to automate and when to do manual.
+
+ •When we don't need to repeat the test we can test it manually.but when we know it will be repeat we do automation.
+ •Automation is good to avoid human error.
+ •Manual is good for test which can not be automated.(when changing pages,navigate to blank page that was not possible
+ to find by automation.)
+========================================================================================================================
+5.meaning of grouping in SQL How to do it ? key word used after grouping to filter result.
+
+ •group by groups result based on their values.in one or several columns.It is used with aggregate fuctions(count,Max,Avg,etc)
+ •to filter result we use having keyword.
+========================================================================================================================
+6.what is aggregate functions? examples! (edited).
+aggregate functions calculation on multiple values.(avg,count,sum,min,max)
+========================================================================================================================
+7.how to exclude option in SQL.
+
+ • != or <> to exclude rows in a where clause.
+========================================================================================================================
+ 8.When BA wants to add some new feature, what should you do ?
+
+•don't automate till.BA make sure requirement will not change anymore.then understand new changes clearly.
+========================================================================================================================
+9.How is your framework looks like?
+
+ •Our team has non-technical peoples, Also we are work on  moduals very close to customers.
+  we use cucumber BDD. to make comfortable for non-tec.people.let me go into sutructure my framework
+========================================================================================================================
+10.Could you tell me more about your experience ?
+
+  •Sure; Also out of automation I pairs with developers.sometimes when they has an issue.they tell me we need.peer review.
+   show me what he did.and explain the issue.
+========================================================================================================================
+11.What is generics in Java?
+
+  • Generics means parameterized types. List<String> list =new List();
+========================================================================================================================
+12.Difference between String, StringBuilder and StringBuffer.
+
+ String is immutable class.and stBuilder and stBuffer are mutable.and stBuilder is scronized and stBuffer not.
+========================================================================================================================
+13.Write a program to find if the number is prime or not.
+
+ int num=12;
+ boolean isPrime=true;
+
+   if(num>1){
+   for(int i=2; i<num; i++){
+      if(num %i == 0)
+      isPrime=false;
+      break;
+  }
+  }else{
+    isPrime=false;
+  }
+      }
+
+
+
+========================================================================================================================
+14.Write a query to find Id from the table of a person named as  Muffy.
+
+  •select Id as Muffy from person;
+  •select ID from person named where name='muffy';
+========================================================================================================================
+15.How do you do API testing?
+
+  •I send request with necessary input data.
+  •I get the response.
+  •I verify the response return as expected.
+========================================================================================================================
+16.How do you use Cucumber in your project?Do you write any steps?
+
+ •We use cucumber BDD in our future file using Gherkin language.
+========================================================================================================================
+17.What is merge conflict and how do you resolve it?
+
+ •merge conflict happens when 2 or more person make change on same line codes simultaneously.
+ •We can avoid conflict using short live branch,strong communication.
+========================================================================================================================
+18.What is git stash?
+
+ •stash is an area we usually push our code there temporarily.then we stashout back them with git stash pop/apply.
+
+
+2 coding from leetcode.com
+

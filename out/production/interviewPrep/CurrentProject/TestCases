@@ -1,0 +1,12 @@
+
+
+
+
+2)Verify if the system allows modifying the existing policy for the addition of a new coverage or plan.
+3)Verify if the system is able to modify or update the costumer's personal details.
+5)Verify if the agent's commission is calculated correctly.
+8) Verify if a new payee updated is successfully updated in the system.
+9) Verify if any error message is displayed while adding incorrect rider in the policy.
+10)Verify if the Riders are added successfully to the existing policy..
+14)Verify if the policy can be searched using the Policy number of the Policy Name
+

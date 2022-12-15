@@ -1,0 +1,108 @@
+TEST PLAN:
+  Document that describes software testing scope and activities. Basis for formally testing any software/product in a
+  project.
+  •It allows you to structure your efforts and see a bigger picture.(Never build a house without plan!)
+
+An Agile Test Plan is a very important document because it gives your Quality Assurance (QA) team the ability to have all
+ high-level scenarios(test cases), business requirements and estimates in one place. Your QA Analyst or Agile Tester should fill out
+  an Agile Test Plan during each sprint planning event
+
+Image result for when do we need write test plan
+A Test Plan is a detailed document that describes the test strategy, objectives, schedule, estimation, deliverables, and
+ resources required to perform testing for a software product. Test Plan helps us determine the effort needed to
+  validate the quality of the application under test
+
+TEST LEAD OR QA MANAGER IS RESPONSIBLE MAKE TEST PLAN;
+    •what to test, How to test, When to test, Who will test
+
+    TEST PLAN EXAMPLE;
+
+     -Overview;
+     -Scope;
+     -Impact
+     -Acceptance Criteria
+     -Epic
+     -design doc
+     -Environment
+     -High Level Test Scenarios
+      •Verify if the system allows modifying the existing policy for the new addition of a new coverage or plan.
+      •Verify if the system is able to modify or update the costumer's personal detail.
+
+
+========================================================================================================================
+TEST STRATEGY;
+ •Test Strategy is a critical step in making a Test Plan in Software Testing. A Test Strategy document,
+      is a high-level document, which is usually developed by PO.
+
+ 1.TEST SCOPE;
+   •Before the start of any test activity, scope of the testing should be known.
+
+   Defining the scope of your testing project is very important for all stakeholders. A precise scope helps you
+        •Give everyone a confidence & accurate information of the testing you are doing.
+        •All project members will have a clear understanding about what is tested and what is not.
+
+   FOREX;
+        In scope items;Functional Testing, API Testing.
+        Out of scope items;Database Testing, hardware & any other external interfaces.
+
+! Problem scenario;
+   the costumer wants you test her API. But the project budget does not permit to do so.such a case what will you do ?
+
+     Well,is such case you need to convince the customer that API Testing is extra work and will consume significant
+     resources. tell her if API Testing is included in-scope the budget will increase by XYZ amount.
+
+  2. Create Test Logistics;
+      •Who will test ?
+                -You may not know exact names of the tester who will test, but the type of tester can be defined.
+
+      •When will the test occur ?
+                -you will start to test when you have all required items shown in following figure.
+
+                 Test specs and requirement document+Human resources+Test environment=ready to test.
+
+ 3. Define Test Objective;
+     The objective of the testing is finding as many software defects as possible; ensure that the software under test
+      is bug free before release.
+
+ 4) Define Test Criteria;
+
+       Suspension Criteria;Test Plan Example: If your team members report that there are 40% of test cases failed, you
+        should suspend testing until the development team fixes all the failed cases.
+
+ 6) Plan Test Environment;
+
+
+
+
+
+
+
+
+
+
+   Component of test Strategy;
+
+   •Scope and Objectives
+   •Roles and responsibilities
+   •Communication and status reporting
+   •Industry standards to follow
+   •Test automation and tools
+   •Defect reporting and tracing
+========================================================================================================================
+ Test Case;
+
+  It is a set of action to execute to check a functionality.
+
+  •Test Case ID
+  •Test data
+  •Test Description
+  •Expected Result
+  •Actual Result
+  •Pass or Fail
+
+========================================================================================================================
+? How can you test a product without any information about it ?
+
+ •The answer is impossible. You must learn a product thoroughly before testing it.
+ •You should research clients and the end users to know their needs and expectations from the app.
+
